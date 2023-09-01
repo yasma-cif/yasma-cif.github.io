@@ -139,3 +139,10 @@ html.light {
 .portrait-img {
     border-radius: 50%;
 }
+
+.name-and-skills
+{
+    text-align: center;
+    margin: 20px;
+    white-space: nowrap;
+}
