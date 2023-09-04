@@ -9,7 +9,8 @@ html {
 }
 
 body {
-    max-width: 540px;
+    /*max-width: 540px*/;
+    max-width: 800px;
     margin: 0 auto;
     text-align: justify;
 }
@@ -45,6 +46,12 @@ p {
 
 /* Gifs */
 .gif {
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+/* TopImage */
+.topimg {
     margin: 20px 0 0 0;
     text-align: center;
 }
@@ -85,8 +92,9 @@ p {
 /* Card listing */
 .link-card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 1rem;
+    /*grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));*/
+    grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+    gap: 3rem;
     padding: 0;
 }
 

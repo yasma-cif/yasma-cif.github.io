@@ -5,12 +5,12 @@ interface Props {
 	href: string;
 }
 
-const { href, image, title, body } = Astro.props;
+const { onclick, image, title, body } = Astro.props;
 ---
 <li class="link-card">
-    <a href={href}>
+    <a onclick={onclick}>
         <div class="img">
-            <img width="226" height="127" src={image} class="card-img" alt="ProjectImage">
+			<img width="350" height="auto" src={image} class="card-img" alt="Project">
         </div>
 		<h3>
 			{title}
@@ -25,7 +25,6 @@ const { href, image, title, body } = Astro.props;
         list-style: none;
         display: flex;
         background-size: 400%;
-        padding: 20px;
     }
 
     .link-card > a {
@@ -34,10 +33,13 @@ const { href, image, title, body } = Astro.props;
         line-height: 1.4;
         border-radius: 8px;
         color: #fdebf3;
+		cursor: pointer;
     }
 
     .img {
-        text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
     }
 
     img {
@@ -45,7 +47,7 @@ const { href, image, title, body } = Astro.props;
     }
 
     h3 {
-        margin: 0;
+        margin: 10px;
         font-family: 'Josefin Sans', sans-serif;
         font-size: 1.5rem;
         font-weight: normal;
