@@ -1,7 +1,4 @@
 {
-  "name": "milky-way",
-  "type": "module",
-  "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,7 +7,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.9.6"
+    "@astrojs/react": "^3.0.0",
+    "@astrojs/tailwind": "^5.0.0",
+    "astro": "^3.0.8"
   },
   "devDependencies": {
     "sass": "^1.66.1"
