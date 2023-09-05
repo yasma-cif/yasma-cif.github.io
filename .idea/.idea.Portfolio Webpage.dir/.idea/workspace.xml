@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ab2d72a-fc23-4588-b524-f742a601aa64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Modal.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/danievan.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Layout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Layout.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/danievan.astro" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/works.astro" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,10 +26,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2UvxKsSHuUtUC69q0a7tr46p31W" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -41,11 +45,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\JetBrains Rider 2022.2.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -65,6 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1693833795397</updated>
       <workItem from="1693833798246" duration="8487000" />
+      <workItem from="1693897833598" duration="15676000" />
     </task>
     <servers />
   </component>

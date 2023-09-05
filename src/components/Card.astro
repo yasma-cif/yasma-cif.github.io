@@ -15,6 +15,9 @@ const { onclick, image, title, body } = Astro.props;
 		<h3>
 			{title}
 		</h3>
+		<div class="tag-list">
+			<slot />
+		</div>
 		<p>
 			{body}
 		</p>
@@ -60,7 +63,14 @@ const { onclick, image, title, body } = Astro.props;
         text-indent: 0;
         text-align: center;
         margin: 0.5rem 0 0;
+		line-break: auto;
     }
+	
+	.tag-list
+	{
+		text-align: center;
+		padding-bottom: 5px;
+	}
 
     .link-card:hover {
         transform: scale(1.05);

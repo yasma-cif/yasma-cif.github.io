@@ -5,123 +5,224 @@ import Modal from '../components/Modal.astro';
 const pageTitle = "Ismael Moyano";
 ---
 <Layout pageTitle={pageTitle}>
-    <div class="topimg">
-        <img width="300" height="auto" alt="Ismael" class="round-borders" src="/ismael2.png"/>
-    </div>
-    <h1>Ismael Moyano</h1>
-    <small>Digital Craftsman (Developer)</small>
-    <h2>About</h2>
-    <p>
-        Hey! I'm Ismael and I like to create cool games.
-    </p>
-    <p>
-        I studied Software Engineering, and Gamedev; and have a strong knowledge of Unity and C#.
-    </p>
-    <p>
-        My strength is programming, but I like to think of myself more like a swiss army knife. I like to polish cool things to perfection, be it abstract classes, touch particles or screen transitions.
-    </p>
-    <p>
-        Audio is a personal passion of mine: I have multiple games released using FMOD Studio, with most of the sound effects designed by me. I am also into Music Composition, but not professionally :).
-    </p>
     
-    <p>
-        Twitter, Linkedin, itchio, Correo
-    </p>
-    
-    <div class="button">
-        <a href="/works/">
-            <button>My resume</button>
-        </a>
-    </div>
-    
-    <h2>Projects</h2>
-    
-    <ul role="list" class="link-card-grid">
-        <Card
-                onclick={`window.danievan.showModal()`}
-                image="/danievan/danievan.png"
-                title="Dani & Evan: Dinosaur Books"
-                body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-        <Card
-                onclick={`window.danievan.showModal()`}
-                image="/brokenechoes/brokenechoes.png"
-                title="Broken Echoes"
-                body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-        <Card
-                onclick={`window.danievan.showModal()`}
-                image="/hitchhiker/hitchhiker.png"
-                title="The Vanishing Hitchhiker"
-                body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-        <Card
-                onclick={`window.danievan.showModal()`}
-                image="/hitchhiker/hitchhiker.png"
-                title="Crabmelo's Smoothie Stand"
-                body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-    </ul>
-    
-    <h2>Skills</h2>
-    <div class="link-images">
-        <img width="46" height="46" alt="C#" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg"/>
-        <img width="46" height="46" alt="DotNetCore" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
-        <img width="46" height="46" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"/>
-        <img width="46" height="46" alt="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"/>
-        <img width="46" height="46" alt="Bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"/>
-        <img width="46" height="46" alt="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"/>
-        <img width="46" height="46" alt="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"/>
-        <img width="46" height="46" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
-        <img width="46" height="46" alt="PostGres" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"/>
-    </div>
-    
-    <h2>Interests</h2>
-    <p>
-        Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
-        Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
-        facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
-        Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
-    </p>
+    <div id="aboutme">
+        <div class="topimg">
+            <h1>Ismael Moyano</h1>
+            <small class="subtitle">Programmer etc.</small>
+            <br/>
+            <br/>
+            <br/>
+            <img width="250" height="auto" alt="Ismael" class="round-borders" src="/ismael2.png"/>
+        </div>
 
-    <Modal id="danievan" open="Open modal">
+        <h2>About me</h2>
+        <p>
+            Hey! I'm Ismael and I like to create cool games.
+        </p>
+        <p>
+            My strength is programming, but I like to think of myself more like a swiss army knife. I like to polish cool things to perfection, be it code logic, touch particles or screen transitions.
+        </p>
+        <p>
+            I studied Software Engineering with a Gamedev Master's; and have a strong knowledge of Unity and C#.
+        </p>
+        <p>
+            Audio is a personal passion of mine: I have multiple games released using FMOD Studio, with most of the sound effects designed by me. I am also into Music Composition, but mostly as a <nobr>hobby :).</nobr>
+        </p>
+
+        <p class="social">
+            <a href="https://twitter.com/leamsy_azurae" target="_blank" rel="noopener noreferrer">
+                <img width="auto" height="30" alt="Twitter" src="/twitter_logo.png"/>
+            </a>
+            <a href="https://www.linkedin.com/in/leamsy/" target="_blank" rel="noopener noreferrer">
+                <img width="auto" height="30" alt="LinkedIn" src="/linkedin_logo.png"/>
+            </a>
+            <a href="https://leamsy.itch.io/" target="_blank" rel="noopener noreferrer">
+                <img width="auto" height="30" alt="itch.io" src="/itchio_logo.png"/>
+            </a>
+            <a href="mailto:leamsy.azurae@gmail.com" target="_blank" rel="noopener noreferrer">
+                <img width="auto" height="30" alt="Mail" src="/mail_logo.png"/>
+            </a>
+        </p>
+
+        <div class="button">
+            <a href="/works/">
+                <button>My resume</button>
+            </a>
+        </div>
+    </div>
+        
+    <div id="projects">
+        <h2>Projects</h2>
+
+        <ul role="list" class="link-card-grid">
+            <Card
+                    onclick={`window.danievan.showModal()`}
+                    image="/danievan/danievan.png"
+                    title="Dani & Evan: Dinosaur Books"
+                    body="Explore the hidden dinosaur world alongside Dani and Evan in this visual novel for kids, with exploration segments, minigames and collectables."
+            >
+
+                <small class="tag" style="background-color: rgba(255,96,66,0.57)">Visual Novel</small>
+                <small class="tag" style="background-color: rgba(255,79,247,0.57)">Mobile</small>
+                <small class="tag" style="background-color: rgba(255,79,247,0.57)">Nintendo Switch</small>
+                <small class="tag" style="background-color: rgba(111,239,88,0.57)">Released</small>
+            
+            </Card>
+            <Card
+                    onclick={`window.brokenechoes.showModal()`}
+                    image="/brokenechoes/brokenechoes.png"
+                    title="Broken Echoes"
+                    body="After awaking in an oddly familiar island, Lea must face forces that threaten space and time in this action-adventure game with cinematic cutscenes."
+            >
+
+                <small class="tag" style="background-color: rgba(255,96,66,0.57)">Action-adventure</small>
+                <small class="tag" style="background-color: rgba(255,79,247,0.57)">PC</small>
+                <small class="tag" style="background-color: rgba(111,239,88,0.57)">Final Project</small>
+                
+            </Card>
+            <Card
+                    onclick={`window.hitchhiker.showModal()`}
+                    image="/hitchhiker/hitchhiker.png"
+                    title="The Vanishing Hitchhiker"
+                    body="Make choices and expect the unexpected in this spooky visual novel for Nintendo Switch."
+            >
+
+                <small class="tag" style="background-color: rgba(255,96,66,0.57)">Visual Novel</small>
+                <small class="tag" style="background-color: rgba(255,79,247,0.57)">Nintendo Switch</small>
+                <small class="tag" style="background-color: rgba(111,239,88,0.57)">Released</small>
+                
+            </Card>
+            <Card
+                    onclick={`window.crabmelo.showModal()`}
+                    image="/crabmelo/crabmelo.png"
+                    title="Crabmelo's Smoothie Stand"
+                    body="Get fruits to your stand to make delicious smoothies and help cheer up your customers in this narrative puzzle game."
+            >
+
+                <small class="tag" style="background-color: rgba(255,96,66,0.57)">Puzzle</small>
+                <small class="tag" style="background-color: rgba(255,79,247,0.57)">PC</small>
+                <small class="tag" style="background-color: rgba(111,239,88,0.57)">In development</small>
+                
+            </Card>
+        </ul>
+    </div>
+    
+    <div id="skills">
+        <h2>Skills</h2>
+        <div class="link-images">
+            <img width="46" height="46" alt="C#" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg"/>
+            <img width="46" height="46" alt="DotNetCore" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
+            <img width="46" height="46" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"/>
+            <img width="46" height="46" alt="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"/>
+            <img width="46" height="46" alt="Bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"/>
+            <img width="46" height="46" alt="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"/>
+            <img width="46" height="46" alt="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"/>
+            <img width="46" height="46" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
+            <img width="46" height="46" alt="PostGres" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"/>
+        </div>
+    </div>
+
+    <div id="interests">
+        <h2>Interests</h2>
+        <p>
+            Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
+            Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
+            facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
+            Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
+        </p>
+    </div>
+    
+    
+
+    <Modal id="danievan">
         <main slot="main">
-            <div class="topimg">
-                <img width="90%" height="auto" alt="Ismael" style="border-radius: 16px" src="/danievan/danievan.png"/>
+            <div class="bannerimg">
+                <img alt="danievan" src="/danievan/danievan.png"/>
             </div>
             <h1>Dani & Evan: Dinosaur Books</h1>
             <p>
-                mimdimimimimidmid
-            </p>
-            <p>
-                mimdimimimimidmid
-            </p>
-            <p>
-                mimdimimimimidmid
-            </p>
-            <h2>Cool things I did</h2>
-            <p>
-                mimdimimimimidmid
-            </p>
-            <p>
-                mimdimimimimidmid
+                Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
+                Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
+                facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
+                Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
+                <br/>
+                Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
+                Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
+                facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
+                Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
+                <br/>
+                Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
+                Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
+                facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
+                Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
+                <br/>
+                Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
+                Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
+                facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
+                Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
+                <br/>
             </p>
         </main>
-        <button slot="close">Close</button>
+    </Modal>
+
+    <Modal id="brokenechoes">
+        <main slot="main">
+            <div class="bannerimg">
+                <img alt="brokenechoes" src="/brokenechoes/brokenechoes.png"/>
+            </div>
+            <h1>Dani & Evan: Dinosaur Books</h1>
+            <p>
+                Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
+                Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
+                facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
+                Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
+                <br/>
+            </p>
+        </main>
+    </Modal>
+
+    <Modal id="hitchhiker">
+        <main slot="main">
+            <div class="bannerimg">
+                <img alt="hitchhiker" src="/hitchhiker/hitchhiker.png"/>
+            </div>
+            <h1>Dani & Evan: Dinosaur Books</h1>
+            <p>
+                Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
+                Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
+                facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
+                Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
+                <br/>
+            </p>
+        </main>
+    </Modal>
+
+    <Modal id="crabmelo">
+        <main slot="main">
+            <div class="bannerimg">
+                <img alt="crabmelo" src="/crabmelo/crabmelo.png"/>
+            </div>
+            <h1>Dani & Evan: Dinosaur Books</h1>
+            <p>
+                Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
+                Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
+                facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
+                Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
+                <br/>
+            </p>
+        </main>
     </Modal>
     
     
 </Layout>
 <style>
-    /* small */
-    small {
-        background-color: #584966;
-        color: #fdebf3;
-        border-radius: 6px;
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: 600;
-        padding: 0.3em 0.6em 0.2em;
+
+    .social {
+        text-align: center; 
+        margin: 20px;
     }
+
 
     /* Button */
     button {
@@ -134,14 +235,9 @@ const pageTitle = "Ismael Moyano";
         transition: background-color 0.4s, color 0.4s;
     }
 
-    button:hover {
-        background-color: #78c2ad;
-        color: #fdebf3;
-        cursor: pointer;
-    }
-
-    .button {
-        text-align: center;
+    /* Social images */
+    .social img {
+        margin: 6px 6px;
     }
 
     /* Skill images */
