@@ -1,4 +1,8 @@
 ---
+interface Props {
+    modal_id: string;
+}
+
 const {modal_id} = Astro.props;
 ---
 
@@ -6,22 +10,20 @@ const {modal_id} = Astro.props;
 
     class Modal extends HTMLElement {
 
-        OpenModalFun()
-        {
-            const modal = document.getElementById(this.dataset.card_id) as HTMLDialogElement;
+        constructor() {
+            super();
 
-            modal.showModal();
+            const close = document.getElementById("close" + this.dataset.modal_id);
 
-            const body = document.querySelector('body');
-            body.style.overflowY = 'hidden';
+            close.addEventListener("click", () => {
 
-            window.onclick = function(event)
-            {
-                if (event.target == modal) {
-                    modal.close();
-                    body.style.overflowY = 'auto';
-                }
-            }
+                const modal = document.getElementById(this.dataset.modal_id) as HTMLDialogElement;
+                const body = document.querySelector('body');
+
+                modal.close();
+                body.style.overflowY = 'scroll';
+                body.style.paddingRight = '0px';
+            });
         }
     }
 
@@ -29,16 +31,17 @@ const {modal_id} = Astro.props;
     
 </script>
 
-<dialog id={modal_id}>
-    <form method="dialog" style="display: unset">
-        <button class="close">
+<modal-element data-modal_id={modal_id}>
+    <dialog id={modal_id}>
+        <button id={"close" + modal_id} class="close">
             X
         </button>
-    </form>
-    <div class="body">
-        <slot name="main" />
-    </div>
-</dialog>
+        <div class="body">
+            <slot name="main" />
+        </div>
+    </dialog>
+</modal-element>
+
 
 <style lang="scss">
   dialog {
