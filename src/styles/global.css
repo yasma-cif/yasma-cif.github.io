@@ -13,7 +13,7 @@ body {
     /*max-width: 540px*/;
     max-width: 800px;
     margin: 0 auto;
-    text-align: justify;
+    /*text-align: justify;*/
 }
 
 /* Headings */
@@ -35,11 +35,23 @@ h2 {
     margin-bottom: 0;
 }
 
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.7em;
+    margin-bottom: 0;
+}
+
+b {
+    text-decoration: underline #375a7f;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+}
+
 /* Paragraphs */
 p {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.1em;
-    hyphens: auto;
+    font-size: 1.2em;
+    hyphens: none;
     line-height: 1.5;
     text-indent: 1em;
 }
@@ -67,7 +79,7 @@ p {
 .bannerimg img{
     width: 100%;
     border-radius: 16px;
-    margin: -90px 0 0 0;
+    margin: -10% 0 0 0;
 }
 
 /* Navigation Bar */
@@ -145,6 +157,7 @@ small.tag {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     padding: 0.3em 0.6em 0.2em;
+    margin-top: 20px;
 }
 
 
@@ -173,6 +186,26 @@ html::-webkit-scrollbar-track {
     background: linear-gradient(90deg,#434343,#434343 1px,#111 0,#111);
 }
 
+.cool-things
+{
+    display: table;
+}
+
+/*.cool-things:after {
+    content: "";
+    clear: both;
+    margin-bottom: 10px;
+}*/
+
+.column {
+    width: 50%;
+    height: inherit;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 10px 10px 10px;
+}
+
 /* Media Query */
 @media only screen and (max-width: 600px) {
     body {
@@ -193,5 +226,16 @@ html::-webkit-scrollbar-track {
 
     .nav-links a {
         margin: 0 8px;
+    }
+
+    .cool-things:after {
+        content: "";
+        display: block;
+        clear: both;
+        margin-bottom: 10px;
+    }
+
+    .column {
+        width: 100%;
     }
 }

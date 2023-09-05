@@ -1,28 +1,67 @@
 ---
 interface Props {
+	card_id: string;
 	title: string;
 	body: string;
 	href: string;
 }
 
-const { onclick, image, title, body } = Astro.props;
+const { card_id, image, title, body } = Astro.props;
 ---
-<li class="link-card">
-    <a onclick={onclick}>
-        <div class="img">
-			<img width="350" height="auto" src={image} class="card-img" alt="Project">
-        </div>
-		<h3>
-			{title}
-		</h3>
-		<div class="tag-list">
-			<slot />
-		</div>
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
+
+<script>
+
+	class Card extends HTMLElement {
+		
+		constructor() {
+			super();
+
+			const clickable = document.getElementById("clickable" + this.dataset.card_id);
+
+			clickable.addEventListener("click", () => {
+
+				const modal = document.getElementById(this.dataset.card_id) as HTMLDialogElement;
+
+				modal.showModal();
+
+				const body = document.querySelector('body');
+				body.style.overflowY = 'hidden';
+
+				window.onclick = function(event)
+				{
+					if (event.target == modal) {
+						modal.close();
+						body.style.overflowY = 'auto';
+					}
+				}
+			});
+		}
+	}
+	
+	customElements.define('card-element', Card);
+	
+	
+</script>
+
+<card-element data-card_id={card_id}>
+	<li class="link-card">
+		<a id={"clickable" + card_id}>
+			<div class="img">
+				<img width="350" height="auto" src={image} class="card-img" alt="Project">
+			</div>
+			<h3>
+				{title}
+			</h3>
+			<div class="tag-list">
+				<slot />
+			</div>
+			<p>
+				{body}
+			</p>
+		</a>
+	</li>
+</card-element>
+
 <style>
     .link-card {
         list-style: none;
@@ -76,3 +115,4 @@ const { onclick, image, title, body } = Astro.props;
         transform: scale(1.05);
     }
 </style>
+

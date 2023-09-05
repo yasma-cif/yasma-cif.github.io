@@ -4,6 +4,36 @@ import Card from "../components/Card.astro";
 import Modal from '../components/Modal.astro';
 const pageTitle = "Ismael Moyano";
 ---
+<script>
+    const video = document.querySelector("video");
+    let playState = null;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+                video.pause();
+                playState = false;
+            } else {
+                video.play();
+                playState = true;
+            }
+        });
+    }, {});
+
+    observer.observe(video);
+
+    const onVisibilityChange = () => {
+        if (document.hidden || !playState) {
+            video.pause();
+        } else {
+            video.play();
+        }
+    };
+
+    document.addEventListener("visibilitychange", onVisibilityChange);
+</script>
+
+
 <Layout pageTitle={pageTitle}>
     
     <div id="aboutme">
@@ -57,7 +87,7 @@ const pageTitle = "Ismael Moyano";
 
         <ul role="list" class="link-card-grid">
             <Card
-                    onclick={`window.danievan.showModal()`}
+                    card_id="danievan"
                     image="/danievan/danievan.png"
                     title="Dani & Evan: Dinosaur Books"
                     body="Explore the hidden dinosaur world alongside Dani and Evan in this visual novel for kids, with exploration segments, minigames and collectables."
@@ -70,7 +100,7 @@ const pageTitle = "Ismael Moyano";
             
             </Card>
             <Card
-                    onclick={`window.brokenechoes.showModal()`}
+                    card_id="brokenechoes"
                     image="/brokenechoes/brokenechoes.png"
                     title="Broken Echoes"
                     body="After awaking in an oddly familiar island, Lea must face forces that threaten space and time in this action-adventure game with cinematic cutscenes."
@@ -82,7 +112,7 @@ const pageTitle = "Ismael Moyano";
                 
             </Card>
             <Card
-                    onclick={`window.hitchhiker.showModal()`}
+                    card_id="hitchhiker"
                     image="/hitchhiker/hitchhiker.png"
                     title="The Vanishing Hitchhiker"
                     body="Make choices and expect the unexpected in this spooky visual novel for Nintendo Switch."
@@ -94,7 +124,7 @@ const pageTitle = "Ismael Moyano";
                 
             </Card>
             <Card
-                    onclick={`window.crabmelo.showModal()`}
+                    card_id="crabmelo"
                     image="/crabmelo/crabmelo.png"
                     title="Crabmelo's Smoothie Stand"
                     body="Get fruits to your stand to make delicious smoothies and help cheer up your customers in this narrative puzzle game."
@@ -135,43 +165,83 @@ const pageTitle = "Ismael Moyano";
     
     
 
-    <Modal id="danievan">
+    <Modal modal_id="danievan">
         <main slot="main">
             <div class="bannerimg">
                 <img alt="danievan" src="/danievan/danievan.png"/>
             </div>
             <h1>Dani & Evan: Dinosaur Books</h1>
+
+            <div style="margin: 10px 0 20px 0;">
+                <small class="tag" style="background-color: rgba(255,96,66,0.57)">Visual Novel</small>
+                <small class="tag" style="background-color: rgba(255,79,247,0.57)">Mobile</small>
+                <small class="tag" style="background-color: rgba(255,79,247,0.57)">Nintendo Switch</small>
+                <small class="tag" style="background-color: rgba(111,239,88,0.57)">Released</small>
+            </div>
+            
             <p>
-                Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
-                Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
-                facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
-                Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
-                <br/>
-                Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
-                Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
-                facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
-                Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
-                <br/>
-                Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
-                Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
-                facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
-                Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
-                <br/>
-                Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
-                Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
-                facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
-                Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
-                <br/>
+                <b>Dani & Evan: Dinosaur Books</b> is a visual novel based on the book series "The Adventures of Dani and Evan", more specifically on book number 1.
+                <br>&emsp;The game aims to encourage young kids to read by including exploration segments, minigames and collectables in the form of the "Adventurer's Journal".
+            </p>
+            <p>
+                I worked as the <b>programmer</b> and <b>designer</b> of the game, but I was also in charge of a lot of other things such as <b>animations</b>, <b>sound effects</b>, and <b>texts</b>.
+            </p>
+            
+            <h2>Cool things I did</h2>
+            
+            <div>
+                <h3>Leaf touch particles</h3>
+                
+                <div class="cool-things">
+                    <div class="column">
+                        <p>
+                            These are particles that show up when touching the screen.
+                        </p>
+                        <p>
+                            They leave a trail of leaves and tracks up to 10 fingers at the same time.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
+                            <source src="/danievan/test.mkv" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Leaf touch particles</h3>
+
+                <div class="cool-things">
+                    <div class="column">
+                        <p>
+                            I dsoiandoisanifonsa
+                            <br>fasfsafsafsafsa
+                        </p>
+                    </div>
+                    <div class="column">
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <p>
+                <!--<audio controls>
+                    <source src="/danievan/Remix8Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>-->
             </p>
         </main>
     </Modal>
 
-    <Modal id="brokenechoes">
+    <Modal modal_id="brokenechoes">
         <main slot="main">
             <div class="bannerimg">
                 <img alt="brokenechoes" src="/brokenechoes/brokenechoes.png"/>
             </div>
-            <h1>Dani & Evan: Dinosaur Books</h1>
+            <h1>Broken Echoes</h1>
             <p>
                 Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
                 Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
@@ -182,12 +252,18 @@ const pageTitle = "Ismael Moyano";
         </main>
     </Modal>
 
-    <Modal id="hitchhiker">
+    <Modal modal_id="hitchhiker">
         <main slot="main">
             <div class="bannerimg">
                 <img alt="hitchhiker" src="/hitchhiker/hitchhiker.png"/>
             </div>
-            <h1>Dani & Evan: Dinosaur Books</h1>
+            <h1>The Vanishing Hitchhiker</h1>
+            <div style="margin-top: 10px">
+                <small class="tag" style="background-color: rgba(255,96,66,0.57)">Visual Novel</small>
+                <small class="tag" style="background-color: rgba(255,79,247,0.57)">Nintendo Switch</small>
+                <small class="tag" style="background-color: rgba(111,239,88,0.57)">Released</small>
+            </div>
+            
             <p>
                 Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
                 Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
@@ -198,12 +274,12 @@ const pageTitle = "Ismael Moyano";
         </main>
     </Modal>
 
-    <Modal id="crabmelo">
+    <Modal modal_id="crabmelo">
         <main slot="main">
             <div class="bannerimg">
                 <img alt="crabmelo" src="/crabmelo/crabmelo.png"/>
             </div>
-            <h1>Dani & Evan: Dinosaur Books</h1>
+            <h1>Crabmelo's Smoothie Stand</h1>
             <p>
                 Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
                 Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
@@ -259,3 +335,4 @@ const pageTitle = "Ismael Moyano";
     }
     
 </style>
+
