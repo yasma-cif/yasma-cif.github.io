@@ -1,8 +1,10 @@
 ---
+import {init, send, sendForm} from "@emailjs/browser";
 import Layout from '../layouts/Layout.astro';
 import Card from "../components/Card.astro";
 import Modal from '../components/Modal.astro';
 const pageTitle = "Ismael Moyano";
+
 ---
 <script>
     const video = document.querySelector("video");
@@ -139,10 +141,10 @@ const pageTitle = "Ismael Moyano";
         </ul>
         
         <p style="margin-top: 60px; text-align: center">
-            These are just some highlights. if you wanna see more check out my itch.io!
+            This list is just comprised of highlights. If you want to see smaller, more experimental projects, feel free to check out my itch.io!
             <br><br>
             <a href="https://leamsy.itch.io/" target="_blank" rel="noopener noreferrer" style="">
-                <img width="auto" height="75px" alt="itch.io" src="/itchio_logo.png"/>
+                <img width="auto" height="60px" alt="itch.io" src="/itchio_logo.png"/>
             </a>
         </p>
     </div>
@@ -165,21 +167,58 @@ const pageTitle = "Ismael Moyano";
     <div id="interests">
         <h2>Interests</h2>
         <p>
-            Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
-            Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
-            facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
-            Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
+            These are 10 facts about me!
         </p>
+        <ol>
+            <li>
+                I can't stand wedge cheese.
+            </li>
+            <li>
+                Someone threw a duck over our fence once, so we adopted it for a couple of months. Its name was "Colorines".
+            </li>
+            <li>
+                I'm always in some sort of idle dance, Cuphead-style.
+            </li>
+            <li>
+                I use bananas way too much as an ingredient when cooking.
+            </li>
+            <li>
+                Two of my favorite game franchises are Dark Souls and Kirby. Opposites touch.
+            </li>
+            <li>
+                People say I have the softest cheeks they have ever seen. I agree.
+            </li>
+            <li>
+                My first game development engine was GameMaker. My second was <nobr>Wario Ware: DIY</nobr>.
+            </li>
+        </ol>
     </div>
 
+    
     <div id="contact">
         <h2>Contact</h2>
         <p>
-            Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
-            Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
-            facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
-            Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
+            Hit me up!
         </p>
+
+        <form id="contact-form">
+            <label>
+                Email:
+                <input type="email" name="from_name" required />
+            </label>
+            <br/>
+            <label>
+                Subject:
+                <input type="text" name="subject" />
+            </label>
+            <br/>
+            <label>
+                Message:
+                <input type="text" name="message" required minlength="10" />
+            </label>
+            <br/>
+            <button>Send</button>
+        </form>
     </div>
     
     
@@ -206,6 +245,13 @@ const pageTitle = "Ismael Moyano";
             <p>
                 I worked as the <b>programmer</b> and <b>designer</b> of the game, but I was also in charge of a lot of other things such as <b>animations</b>, <b>sound effects</b>, and <b>texts</b>.
             </p>
+
+            <div class="bannervideo">
+                <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
+                    <source src="/danievan/test.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             
             <h2>Cool things I did</h2>
             

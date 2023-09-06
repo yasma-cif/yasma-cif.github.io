@@ -58,11 +58,33 @@ p {
     text-indent: 1em;
 }
 
+ol  {
+    line-height: 1.5;
+    border: 2px solid #78c2ad;
+    border-radius: 12px;
+}
+
+li  {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    hyphens: none;
+    margin: 20px 5px 20px 5px;
+}
+
+li::marker  {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
+}
 
 /* Gifs */
 .gif {
     margin: 20px 0 0 0;
     text-align: center;
+}
+
+.video
+{
+    outline: 0;
 }
 
 /* TopImage */
@@ -82,6 +104,19 @@ p {
     width: 100%;
     border-radius: 16px;
     margin: -10% 0 0 0;
+}
+
+.bannervideo{
+    overflow: hidden;
+    max-width:100%;
+    max-height:200px;
+    border-radius: 16px;
+    text-align: center;
+}
+.bannervideo video{
+    width: 100%;
+    border-radius: 16px;
+    margin: -15% 0 0 0;
 }
 
 /* Navigation Bar */
