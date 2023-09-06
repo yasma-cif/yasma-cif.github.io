@@ -22,7 +22,7 @@ const {modal_id} = Astro.props;
 
                 modal.close();
                 body.style.overflowY = 'scroll';
-                body.style.paddingRight = '0px';
+                //body.style.paddingRight = '0px';
             });
         }
     }
@@ -92,20 +92,20 @@ const {modal_id} = Astro.props;
     .body
     {
         height: 90vh;
-        padding: 0 10px 0 10px;
+        padding: 0 8px 0 8px;
         overflow-y: auto;
     }
     
     .close
     {
         color: inherit;
-        background-color: transparent;
+        background-color: #609188;
         border: 2px solid rgba(253, 235, 243, 0.9);
         text-align: center;
-        position: fixed;
-        right: 8px;
-        top: 8px;
-        padding: 10px 10.5px 6px 11.5px;
+        position: absolute;
+        right: 1%;
+        top: 1%;
+        padding: 4px 6px 1px 6px;
         border-radius: 50%;
         font: 600 20px 'Josefin Sans', sans-serif;
         outline: 0;
@@ -129,6 +129,25 @@ const {modal_id} = Astro.props;
         background: linear-gradient(90deg,#434343,#434343 1px,rgba(1, 1, 1, 0.1) 0,rgba(1, 1, 1, 0.1));
         border-radius: 16px;
     }
-    
-    
+
+    /* Media Query */
+    @media only screen and (max-width: 600px) {
+        .body::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+
+        .body::-webkit-scrollbar-thumb {
+            background: rgba(67, 63, 79, 0.5);
+            border-radius: 16px;
+            box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25),inset -2px -2px 2px rgba(0,0,0,.25);
+        }
+
+        .body::-webkit-scrollbar-track {
+            background: linear-gradient(90deg,#434343,#434343 1px,rgba(1, 1, 1, 0.1) 0,rgba(1, 1, 1, 0.1));
+            border-radius: 16px;
+        }
+    }
+
+
 </style>

@@ -10,10 +10,8 @@ html {
 }
 
 body {
-    /*max-width: 540px*/;
     max-width: 800px;
     margin: 0 auto;
-    /*text-align: justify;*/
 }
 
 /* Headings */
@@ -25,6 +23,7 @@ h1, h2 {
 h1 {
     font-size: 2.8em;
     margin: 0;
+    line-height: 130%;
 }
 
 h2 {
@@ -36,6 +35,9 @@ h2 {
 }
 
 h3 {
+    text-decoration: underline #375a7f;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.7em;
     margin-bottom: 0;
@@ -83,12 +85,9 @@ p {
 }
 
 /* Navigation Bar */
-.nav-bar {
-    grid-template-columns: 1fr 1fr;
-    margin-top: 0.8rem;
-}
 
 .title-link, .nav-links {
+    margin-top: 0.8rem;
     font-family: 'Pacifico', cursive;
     font-size: 1.3rem;
 }
@@ -107,7 +106,7 @@ p {
 .nav-links {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.1rem;
-    text-align: right;
+    text-align: center;
 }
 
 .nav-links a {
@@ -159,7 +158,6 @@ small.tag {
     font-weight: 600;
     padding: 0.3em 0.6em 0.2em;
     margin: 0 3px 0 3px;
-    text-align: center;
 }
 
 
@@ -209,20 +207,12 @@ html::-webkit-scrollbar-track {
 }
 
 /* Media Query */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     body {
-        width: 320px;
+        margin: 15px 15px 15px 15px;
     }
 
-    .title-link {
-        text-align: center;
-    }
-
-    .nav-links {
-        text-align: center;
-    }
-
-    .nav-links a {
+    .nav-links a{
         margin: 0 8px;
     }
 
