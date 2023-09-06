@@ -35,9 +35,6 @@ h2 {
 }
 
 b {
-    text-decoration: underline #375a7f;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 4px;
 }
 
 /* Paragraphs */
@@ -46,7 +43,6 @@ p {
     font-size: 1.2em;
     hyphens: none;
     line-height: 1.5;
-    text-indent: 1em;
 }
 
 ol  {
@@ -73,9 +69,17 @@ li::marker  {
     text-align: center;
 }
 
-.video
+video
 {
     outline: 0;
+}
+
+.col-video
+{
+    border-radius: 12px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* TopImage */
@@ -183,7 +187,7 @@ small.tag {
     font-size: 14px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
-    padding: 0.3em 0.6em 0.2em;
+    padding: 0.3em 0.4em 0.2em 0.6em;
     margin: 0 3px 0 3px;
 }
 
@@ -215,22 +219,15 @@ html::-webkit-scrollbar-track {
 
 .cool-things
 {
-    display: table;
+    display: flex;
+    width: 100%;
 }
-
-/*.cool-things:after {
-    content: "";
-    clear: both;
-    margin-bottom: 10px;
-}*/
 
 .column {
     width: 50%;
-    height: inherit;
-    box-sizing: border-box;
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px 10px 10px 10px;
+    display: table-cell;
+    flex: 1;
+    padding: 1% 1% 1% 1%;
 }
 
 .social {
@@ -284,6 +281,10 @@ button {
     border-radius: 50%;
 }
 
+.bio{
+    margin: 0 15% 0 15%;
+}
+
 /* Media Query */
 @media only screen and (max-width: 800px) {
     body {
@@ -300,6 +301,10 @@ button {
         margin: 0 8px;
     }
 
+    .cool-things {
+        display: block;
+    }
+
     .cool-things:after {
         content: "";
         display: block;
@@ -308,6 +313,18 @@ button {
     }
 
     .column {
+        display: block;
         width: 100%;
+    }
+
+    .col-video
+    {
+        position: initial;
+        top: 0;
+        transform: translateY(0%);
+    }
+
+    .bio{
+        margin: 0 0 0 0;
     }
 }

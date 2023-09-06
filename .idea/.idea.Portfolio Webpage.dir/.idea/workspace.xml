@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ab2d72a-fc23-4588-b524-f742a601aa64" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/public/GitHub.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blog.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blog.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/laptop.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/space.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/youtube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Modal.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/BrokenEchoes.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BrokenEchoes.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Crabmelo.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Crabmelo.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DaniEvan.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DaniEvan.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Hitchhiker.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Hitchhiker.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
     </list>
@@ -77,6 +73,7 @@
       <workItem from="1693833798246" duration="8487000" />
       <workItem from="1693897833598" duration="15676000" />
       <workItem from="1693926807272" duration="26583000" />
+      <workItem from="1694016812833" duration="21534000" />
     </task>
     <servers />
   </component>
