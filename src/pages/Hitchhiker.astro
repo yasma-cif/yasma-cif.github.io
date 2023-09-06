@@ -1,0 +1,133 @@
+﻿---
+import Modal from "../components/Modal.astro";
+---
+<Modal modal_id="hitchhiker">
+    <main slot="main">
+        <div class="bannervideo">
+            <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
+                <source src="/danievan/videos/danievan_banner.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <br>
+        <h1>The Vanishing Hitchhiker</h1>
+
+        <div style="margin: 10px 0 20px 0; line-height: 175%; max-width: 300px">
+            <small class="tag" style="background-color: rgba(255,96,66,0.57)">VisualNovel</small>
+            <small class="tag" style="background-color: rgba(255,79,247,0.57)">Mobile</small>
+            <small class="tag" style="background-color: rgba(255,79,247,0.57)">NintendoSwitch</small>
+            <small class="tag" style="background-color: rgba(111,239,88,0.57)">Released</small>
+        </div>
+
+        <p>
+            <b>Dani & Evan: Dinosaur Books</b> is a visual novel based on the book series "The Adventures of Dani and Evan", more specifically on book number 1.
+        </p>
+        <p>
+            The game aims to encourage young kids to read by including exploration segments, minigames and collectables in the form of the "Explorer's Notebook".
+        </p>
+        <p>
+            I worked as the <b>programmer</b> and <b>designer</b> of the game, but I was also in charge of a lot of other things such as <b>animations</b>, <b>sound effects</b>, and <b>texts</b>.
+        </p>
+
+        <h2 class="cool-things-h2">Cool things I did</h2>
+
+        <div>
+            <h3 class="cool-things-h3">Text implementation and Japanese translation</h3>
+
+            <div class="cool-things">
+                <div class="column">
+                    <p>
+                        I implemented the translation to the <nobr><b>8 languages</b></nobr> the game is available in.
+                    </p>
+                    <p>
+                        Special mention to the <b>Japanese</b> and <b>Russian</b> translations, as they required a completely different set of fonts that proved a challenge to change in runtime.
+                    </p>
+                    <p>
+                        A custom wrapper of the <b>TMP</b> component allowed the right set of <b>fonts and animations</b> to be displayed for each dialog, providing a rich and fun reading experience.
+                    </p>
+                </div>
+                <div class="column">
+                    <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
+                        <source src="/danievan/videos/danievan_jap.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="cool-things-h3">Reusable and scalable chapters system</h3>
+
+            <div class="cool-things">
+                <div class="column">
+                    <p>
+                        The game's chapter system was built to be <b>reusable</b> and <b>easy to extend</b>.
+                    </p>
+                    <p>
+                        Everything runs in the same scene and is controlled by <b>ScriptableObjects</b>. Adding a new chapter or section is as easy as adding a new element to the list.
+                    </p>
+                </div>
+                <div class="column">
+                    <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
+                        <source src="/danievan/videos/danievan_chapters.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="cool-things-h3">Story adaptation and stage design</h3>
+
+            <div class="cool-things">
+                <div class="column">
+                    <p>
+                        The game's story was based on the book, but it needed to be <b>adapted to the gameplay</b>.
+                    </p>
+                    <p>
+                        I adapted the book's texts to the game, and <b>wrote and designed</b> the exploration segments as natural extensions to the original story.
+                    </p>
+                    <p>
+                        I also wrote the <b>Explorer's Notebook</b> (the unlockables section) and the game's <b>quizzes</b>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="cool-things-h3">Leaf touch particles</h3>
+
+            <div class="cool-things">
+                <div class="column">
+                    <p>
+                        These are particles that show up when <b>touching the screen</b>, making for a fun visual indicator you can <b>mess around with</b>.
+                    </p>
+                    <p>
+                        They leave a trail of leaves and track up to <b>10 fingers</b> at the same time.
+                    </p>
+                </div>
+                <div class="column">
+                    <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
+                        <source src="/danievan/videos/danievan_touch.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="cool-things-h3">Nintendo Switch version</h3>
+
+            <div class="cool-things">
+                <div class="column">
+                    <p>
+                        I implemented all the <b>Nintendo SDKs</b> needed to adapt input, saves, resolution, etc. to the Nintendo Switch.
+                    </p>
+                    <p>
+                        It was important to keep the controls simple, so I updated the input system to <b>change seamlessly</b> between controller and touch input.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</Modal>

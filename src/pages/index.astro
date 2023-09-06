@@ -3,6 +3,12 @@ import {init, send, sendForm} from "@emailjs/browser";
 import Layout from '../layouts/Layout.astro';
 import Card from "../components/Card.astro";
 import Modal from '../components/Modal.astro';
+
+import DaniEvan from './DaniEvan.astro';
+import BrokenEchoes from "./BrokenEchoes.astro";
+import Hitchhiker from "./Hitchhiker.astro";
+import Crabmelo from "./Crabmelo.astro";
+
 const pageTitle = "Ismael Moyano";
 
 ---
@@ -154,7 +160,7 @@ const pageTitle = "Ismael Moyano";
     <div id="skills">
         <h2>Skills</h2>
         <div class="link-images">
-            <img width="46" height="46" alt="C#" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg"/>
+            <!--<img width="46" height="46" alt="C#" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg"/>
             <img width="46" height="46" alt="DotNetCore" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
             <img width="46" height="46" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"/>
             <img width="46" height="46" alt="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"/>
@@ -162,7 +168,7 @@ const pageTitle = "Ismael Moyano";
             <img width="46" height="46" alt="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"/>
             <img width="46" height="46" alt="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"/>
             <img width="46" height="46" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
-            <img width="46" height="46" alt="PostGres" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"/>
+            <img width="46" height="46" alt="PostGres" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"/>-->
         </div>
     </div>
 
@@ -223,342 +229,12 @@ const pageTitle = "Ismael Moyano";
         </form>
     </div>
     
+    <DaniEvan/>
+
+    <BrokenEchoes/>
+
+    <Hitchhiker/>
     
-
-    <Modal modal_id="danievan">
-        <main slot="main">
-            <div class="bannervideo">
-                <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
-                    <source src="/danievan/videos/danievan_banner.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <br>
-            <h1>Dani & Evan: Dinosaur Books</h1>
-
-            <div style="margin: 10px 0 20px 0; line-height: 175%; max-width: 300px">
-                <small class="tag" style="background-color: rgba(255,96,66,0.57)">VisualNovel</small>
-                <small class="tag" style="background-color: rgba(255,79,247,0.57)">Mobile</small>
-                <small class="tag" style="background-color: rgba(255,79,247,0.57)">NintendoSwitch</small>
-                <small class="tag" style="background-color: rgba(111,239,88,0.57)">Released</small>
-            </div>
-            
-            <p>
-                <b>Dani & Evan: Dinosaur Books</b> is a visual novel based on the book series "The Adventures of Dani and Evan", more specifically on book number 1.
-            </p>
-            <p>
-                The game aims to encourage young kids to read by including exploration segments, minigames and collectables in the form of the "Explorer's Notebook".
-            </p>
-            <p>
-                I worked as the <b>programmer</b> and <b>designer</b> of the game, but I was also in charge of a lot of other things such as <b>animations</b>, <b>sound effects</b>, and <b>texts</b>.
-            </p>
-            
-            <h2 class="cool-things-h2">Cool things I did</h2>
-
-            <div>
-                <h3 class="cool-things-h3">Text implementation and Japanese translation</h3>
-
-                <div class="cool-things">
-                    <div class="column">
-                        <p>
-                            I implemented the translation to the <nobr><b>8 languages</b></nobr> the game is available in.
-                        </p>
-                        <p>
-                            Special mention to the <b>Japanese</b> and <b>Russian</b> translations, as they required a completely different set of fonts that proved a challenge to change in runtime.
-                        </p>
-                        <p>
-                            A custom wrapper of the <b>TMP</b> component allowed the right set of <b>fonts and animations</b> to be displayed for each dialog, providing a rich and fun reading experience.
-                        </p>
-                    </div>
-                    <div class="column">
-                        <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
-                            <source src="/danievan/videos/danievan_jap.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="cool-things-h3">Reusable and scalable chapters system</h3>
-
-                <div class="cool-things">
-                    <div class="column">
-                        <p>
-                            The game's chapter system was built to be <b>reusable</b> and <b>easy to extend</b>.
-                        </p>
-                        <p>
-                            Everything runs in the same scene and is controlled by <b>ScriptableObjects</b>. Adding a new chapter or section is as easy as adding a new element to the list.
-                        </p>
-                    </div>
-                    <div class="column">
-                        <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
-                            <source src="/danievan/videos/danievan_chapters.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="cool-things-h3">Story adaptation and stage design</h3>
-
-                <div class="cool-things">
-                    <div class="column">
-                        <p>
-                            The game's story was based on the book, but it needed to be <b>adapted to the gameplay</b>.
-                        </p>
-                        <p>
-                            I adapted the book's texts to the game, and <b>wrote and designed</b> the exploration segments as natural extensions to the original story.
-                        </p>
-                        <p>
-                            I also wrote the <b>Explorer's Notebook</b> (the unlockables section) and the game's <b>quizzes</b>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <h3 class="cool-things-h3">Leaf touch particles</h3>
-                
-                <div class="cool-things">
-                    <div class="column">
-                        <p>
-                            These are particles that show up when <b>touching the screen</b>, making for a fun visual indicator you can <b>mess around with</b>.
-                        </p>
-                        <p>
-                            They leave a trail of leaves and track up to <b>10 fingers</b> at the same time.
-                        </p>
-                    </div>
-                    <div class="column">
-                        <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
-                            <source src="/danievan/videos/danievan_touch.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="cool-things-h3">Nintendo Switch version</h3>
-
-                <div class="cool-things">
-                    <div class="column">
-                        <p>
-                            I implemented all the <b>Nintendo SDKs</b> needed to adapt input, saves, resolution, etc. to the Nintendo Switch.
-                        </p>
-                        <p>
-                            It was important to keep the controls simple, so I updated the input system to <b>change seamlessly</b> between controller and touch input.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </Modal>
-
-    <Modal modal_id="brokenechoes">
-        <main slot="main">
-            <div class="bannervideo">
-                <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
-                    <source src="/brokenechoes/videos/brokenechoes_banner.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <br>
-            <h1>Broken Echoes</h1>
-
-            <div style="margin: 10px 0 20px 0; line-height: 175%; max-width: 300px">
-                <small class="tag" style="background-color: rgba(255,96,66,0.57)">Action-adventure</small>
-                <small class="tag" style="background-color: rgba(255,79,247,0.57)">PC</small>
-                <small class="tag" style="background-color: rgba(111,239,88,0.57)">FinalProject</small>
-            </div>
-
-            <p>
-                <b>Broken Echoes</b> was my Master's final project I developed alongside 5 other classmates for almost a full year.
-            </p>
-            <p>
-                Our goal was to take the opportunity of creating a game for a full year and be as ambitious as possible. The game has action combat, different classes and attacks, exploration and mocapped cinematics.
-            </p>
-            <p>
-                My role in the project was as an audio programmer, music composer; and backup programmer whenever needed.
-            </p>
-
-            <h2 class="cool-things-h2">Cool things I did</h2>
-
-            <div>
-                <h3 class="cool-things-h3">Soundscape</h3>
-
-                <div class="cool-things">
-                    <div class="column">
-                        <p>
-                            I implemented the translation to the <nobr><b>8 languages</b></nobr> the game is available in.
-                        </p>
-                    </div>
-                    <div class="column">
-                        <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
-                            <source src="/brokenechoes/videos/brokenechoes_soundscape.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="cool-things-h3">Music composition</h3>
-
-                <div class="cool-things">
-                    <div class="column">
-                        <p>
-                            I implemented the translation to the <nobr><b>8 languages</b></nobr> the game is available in.
-                        </p>
-                    </div>
-                    <div class="column" style="text-align: center">
-                        <h3 style="font-family: 'Josefin Sans', sans-serif;">Rise and Fall (Bridge Climbing)</h3>
-                        <audio controls>
-                            <source src="/brokenechoes/audio/be_demo1.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                        <h3 style="font-family: 'Josefin Sans', sans-serif;">The Broken Continuum (Battle Theme)</h3>
-                        <audio controls>
-                            <source src="/brokenechoes/audio/be_demo2.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                        <h3 style="font-family: 'Josefin Sans', sans-serif;">Master of Sapience 2 (Final Boss Phase 2)</h3>
-                        <audio controls>
-                            <source src="/brokenechoes/audio/be_demo3.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="cool-things-h3">Sound effects</h3>
-
-                <div class="cool-things">
-                    <div class="column">
-                        <p>
-                            I implemented the translation to the <nobr><b>8 languages</b></nobr> the game is available in.
-                        </p>
-                        <p>
-                            Special mention to the <b>Japanese</b> and <b>Russian</b> translations, as they required a completely different set of fonts that proved a challenge to change in runtime.
-                        </p>
-                    </div>
-                    <div class="column">
-                        <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
-                            <source src="/brokenechoes/videos/.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </Modal>
-
-    <Modal modal_id="hitchhiker">
-        <main slot="main">
-            <div class="bannerimg">
-                <img alt="hitchhiker" src="/hitchhiker/hitchhiker.png"/>
-            </div>
-            <h1>The Vanishing Hitchhiker</h1>
-            
-            <p>
-                Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
-                Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
-                facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
-                Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
-                <br/>
-            </p>
-
-
-
-            <p>
-                <!--<audio controls>
-                    <source src="/danievan/Remix8Ringtone.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>-->
-            </p>
-        </main>
-    </Modal>
-
-    <Modal modal_id="crabmelo">
-        <main slot="main">
-            <div class="bannerimg">
-                <img alt="crabmelo" src="/crabmelo/crabmelo.png"/>
-            </div>
-            <h1>Crabmelo's Smoothie Stand</h1>
-            <p>
-                Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
-                Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
-                facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
-                Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
-                <br/>
-            </p>
-        </main>
-    </Modal>
-    
+    <Crabmelo/>
     
 </Layout>
-<style>
-
-    .social {
-        text-align: center; 
-        margin: 20px;
-        padding-right: 20px;
-    }
-
-    .cool-things-h2 {
-        text-align: center;
-        text-decoration: underline #375a7f;
-        text-decoration-thickness: 4px;
-        text-underline-offset: 6px;
-        font-size: 2.5em;
-        margin-bottom: 0;
-    }
-
-    .cool-things-h3 {
-        text-decoration: underline #375a7f;
-        text-decoration-thickness: 4px;
-        text-underline-offset: 6px;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 1.7em;
-        margin-bottom: 0;
-        line-height: 120%;
-    }
-    
-    /* Button */
-    button {
-        background: rgba(0,0,0,0);
-        border: 2px solid #78c2ad;
-        border-radius: 8px;
-        color: #78c2ad;
-        font: 600 16px 'Josefin Sans', sans-serif;
-        padding: 8px 16px;
-        transition: background-color 0.4s, color 0.4s;
-    }
-
-    /* Social images */
-    .social img {
-        margin: 6px 6px;
-    }
-
-    /* Skill images */
-    .link-images img {
-        margin: 16px 4px;
-    }
-
-    @media only screen and (max-width: 600px) {
-        .link-images img {
-            height: 30px;
-            width: 30px;
-            margin: 16px 1px;
-        }
-    }
-    
-    .round-borders
-    {
-        border-radius: 50%;
-    }
-    
-</style>
-

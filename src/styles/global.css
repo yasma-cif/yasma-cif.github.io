@@ -180,6 +180,7 @@ small.tag {
     background-color: #584966;
     color: #fdebf3;
     border-radius: 6px;
+    font-size: 14px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     padding: 0.3em 0.6em 0.2em;
@@ -232,10 +233,67 @@ html::-webkit-scrollbar-track {
     padding: 10px 10px 10px 10px;
 }
 
+.social {
+    text-align: center;
+    margin: 20px;
+    padding-right: 20px;
+}
+
+.cool-things-h2 {
+    text-align: center;
+    text-decoration: underline #375a7f;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+.cool-things-h3 {
+    text-decoration: underline #375a7f;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.7em;
+    margin-bottom: 0;
+    line-height: 120%;
+}
+
+/* Button */
+button {
+    background: rgba(0,0,0,0);
+    border: 2px solid #78c2ad;
+    border-radius: 8px;
+    color: #78c2ad;
+    font: 600 16px 'Josefin Sans', sans-serif;
+    padding: 8px 16px;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+/* Social images */
+.social img {
+    margin: 6px 6px;
+}
+
+/* Skill images */
+.link-images img {
+    margin: 16px 4px;
+}
+
+.round-borders
+{
+    border-radius: 50%;
+}
+
 /* Media Query */
 @media only screen and (max-width: 800px) {
     body {
         margin: 15px 15px 15px 15px;
+    }
+    
+    .link-images img {
+        height: 30px;
+        width: 30px;
+        margin: 16px 1px;
     }
 
     .nav-links a{
