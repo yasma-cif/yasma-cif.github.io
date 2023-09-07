@@ -12,10 +12,12 @@
     "@emailjs/browser": "^3.11.0",
     "astro": "^3.0.8",
     "emailjs": "^4.0.3",
+    "nodemailer": "^6.9.5",
     "xhr2": "^0.2.1",
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
+    "@types/nodemailer": "^6.4.9",
     "sass": "^1.66.1"
   }
 }
