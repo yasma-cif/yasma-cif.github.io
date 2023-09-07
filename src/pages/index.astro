@@ -11,6 +11,37 @@ import Crabmelo from "./Crabmelo.astro";
 
 const pageTitle = "Ismael Moyano";
 
+(function(){
+    init("uXnbRXjua32t5lbtY");
+})();
+const errors = { from_name: "", subject: "", message: "" };
+if (Astro.request.method === "POST") {
+    try {
+        const data = await Astro.request.formData();
+
+        let templateParams= {
+            from_name: data.get("from_name"),
+            subject: data.get("subject"),
+            message: data.get("message")
+        };
+        
+        const hasErrors = Object.values(errors).some(msg => msg)
+        if (!hasErrors) 
+        {
+            console.log("Se viene3");
+            send('service_9cw83we', 'template_vwcshu8', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        }
+    } catch (error) {
+        if (error instanceof Error) {
+            console.error(error.message);
+        }
+    }
+}
 ---
 <script>
     const video = document.querySelector("video");
@@ -245,7 +276,7 @@ const pageTitle = "Ismael Moyano";
             Hit me up!
         </p>
 
-        <form id="contact-form">
+        <form id="contact-form" method="POST">
             <label>
                 Email:
                 <input type="email" name="from_name" required />
@@ -253,7 +284,7 @@ const pageTitle = "Ismael Moyano";
             <br/>
             <label>
                 Subject:
-                <input type="text" name="subject" />
+                <input type="text" name="subject" required />
             </label>
             <br/>
             <label>
