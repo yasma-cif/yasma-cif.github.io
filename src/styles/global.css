@@ -111,7 +111,7 @@ video
 .bannervideo video{
     width: 100%;
     border-radius: 16px;
-    margin: -9% 0 -9% 0;
+    margin: -10% 0 -10% 0;
 }
 
 /* Navigation Bar */
@@ -282,7 +282,7 @@ button {
 }
 
 .bio{
-    margin: 0 15% 0 15%;
+    margin: 0 10% 0 10%;
 }
 
 /* Media Query */
