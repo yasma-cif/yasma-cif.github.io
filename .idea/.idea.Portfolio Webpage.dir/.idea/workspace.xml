@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ab2d72a-fc23-4588-b524-f742a601aa64" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pages/BrokenEchoes.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BrokenEchoes.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
     </list>
@@ -70,6 +69,7 @@
       <workItem from="1693926807272" duration="26583000" />
       <workItem from="1694016812833" duration="21534000" />
       <workItem from="1694071529220" duration="8466000" />
+      <workItem from="1694776084047" duration="631000" />
     </task>
     <servers />
   </component>
