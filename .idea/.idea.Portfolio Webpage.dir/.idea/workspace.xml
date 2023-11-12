@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ab2d72a-fc23-4588-b524-f742a601aa64" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/fonts/josefinSansLatin.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/josefinSansLatinExt.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/pacificoLatin.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/pacificoLatinExt.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Portfolio Webpage.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Portfolio Webpage.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +77,7 @@
       <workItem from="1694776084047" duration="631000" />
       <workItem from="1694779470835" duration="42000" />
       <workItem from="1695128516089" duration="96000" />
+      <workItem from="1695128658021" duration="1861000" />
     </task>
     <servers />
   </component>
