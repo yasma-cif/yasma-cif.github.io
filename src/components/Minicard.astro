@@ -1,0 +1,85 @@
+---
+const { card_id, image, title, href } = Astro.props;
+---
+
+<script>
+
+	class Minicard extends HTMLElement {
+		
+		constructor() {
+			super();
+		}
+	}
+	
+	customElements.define('minicard-element', Minicard);
+	
+	
+</script>
+
+<minicard-element data-card_id={card_id}>
+	<li class="link-card">
+		<a class="itchio-card" href={href} target="_blank" rel="noopener noreferrer">
+			<div class="img">
+				<img width="auto" height="80px" src={image} class="card-img" alt="Project">
+			</div>
+			<h3 style="font-size: 1em">
+				{title}
+			</h3>
+		</a>
+	</li>
+</minicard-element>
+
+<style>
+    .link-card {
+        list-style: none;
+        display: flex;
+        background-size: 400%;
+    }
+
+    .link-card > a {
+        width: 100%;
+        text-decoration: none;
+        line-height: 1.4;
+        border-radius: 8px;
+        color: #fdebf3;
+		cursor: pointer;
+    }
+
+    .img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+    }
+
+    img {
+        border-radius: 16px;
+    }
+
+    h3 {
+        margin: 10px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.7rem;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.5;
+        text-indent: 0;
+        text-align: center;
+        margin: 0.5rem 0 0;
+		line-break: auto;
+    }
+	
+	.tag-list
+	{
+		text-align: center;
+		padding-bottom: 5px;
+	}
+
+    .link-card:hover {
+        transform: scale(1.05);
+    }
+</style>
+

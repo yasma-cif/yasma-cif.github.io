@@ -10,6 +10,7 @@ import Hitchhiker from "./Hitchhiker.astro";
 import Crabmelo from "./Crabmelo.astro";
 
 import nodemailer from "nodemailer";
+import Minicard from "../components/Minicard.astro";
 
 const pageTitle = "Ismael Moyano";
 
@@ -84,7 +85,7 @@ const pageTitle = "Ismael Moyano";
                 My main strength is programming, but I like to think of myself more like a swiss army knife. I like to polish cool things to perfection, be it code logic, touch effects or screen transitions.
             </p>
             <p>
-                I studied Software Engineering with a Master's in Gamedev; and have a strong knowledge of Unity and C#. I also tinker with Unreal from time to time.
+                I studied Software Engineering with a Master's in Gamedev; and have a strong knowledge of Unity and C#. I also tinker with Unreal and C++ from time to time.
             </p>
             <p>
                 Audio is a personal passion of mine: I have multiple games released using FMOD Studio, with most of the sound effects designed by me. I am also into Music Composition, but mostly as a hobby. All my personal projects use my own songs <nobr>though :).</nobr>
@@ -155,29 +156,49 @@ const pageTitle = "Ismael Moyano";
         </ul>
 
         <div style="margin-top: 60px; text-align: center;">
-            <p style="margin: 0 15% 0 15%">
-                This list is just comprised of highlights. If you want to see smaller, more experimental projects, feel free to check out my itch.io!
-                <br><br>
-                <a href="https://leamsy.itch.io/" target="_blank" rel="noopener noreferrer" style="">
+            <p class="remark" style="margin: 0 8% 0 8%">
+                This list is just comprised of highlights. If you want to see smaller, more experimental projects, feel free to check out <a href="https://ad-astra-studios.itch.io/broken-echoes" target="_blank" rel="noopener noreferrer" style="color: #fdebf3">my itch.io</a>!
+                <!--<a href="https://leamsy.itch.io/" target="_blank" rel="noopener noreferrer" style="">
                     <img width="auto" height="60px" alt="itch.io" src="/itchio_logo.png"/>
-                </a>
+                </a>-->
             </p>
+            <br>
+            <ul role="list" class="link-minicard-grid">
+
+                <Minicard
+                        card_id="tower_sins"
+                        image="/itchio/tower_sins.png"
+                        title="Tower of Sins"
+                        href="https://leamsy.itch.io/tower-of-sins"
+                >
+                </Minicard>
+                <Minicard
+                        card_id="ratita"
+                        image="/itchio/ratita.png"
+                        title="ratitajumper_final_final"
+                        href="https://leamsy.itch.io/ratitajumper-final-final-ahorasiquesi"
+                >
+                </Minicard>
+                <Minicard
+                        card_id="innerself"
+                        image="/itchio/innerself.png"
+                        title="Innerself"
+                        href="https://leamsy.itch.io/innerselves"
+                >
+                </Minicard>
+                <Minicard
+                        card_id="mecabeat"
+                        image="/itchio/mecabeat.png"
+                        title="Mecabeat"
+                        href="https://leamsy.itch.io/mecabeat"
+                >
+                </Minicard>
+            </ul>
         </div>
     </div>
     
     <div id="skills">
         <h2>Skills</h2>
-        <div class="link-images">
-            <!--<img width="46" height="46" alt="C#" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg"/>
-            <img width="46" height="46" alt="DotNetCore" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
-            <img width="46" height="46" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"/>
-            <img width="46" height="46" alt="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"/>
-            <img width="46" height="46" alt="Bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"/>
-            <img width="46" height="46" alt="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"/>
-            <img width="46" height="46" alt="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"/>
-            <img width="46" height="46" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
-            <img width="46" height="46" alt="PostGres" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"/>-->
-        </div>
         <div style="margin: 10px 0 20px 0; line-height: 400%;">
             <small class="big-tag" style="background-color: rgba(236,236,236,0.57);">
                 <nobr> <img width="auto" height="28" alt="unity_logo" style="outline: 0; transform: translateY(10%);" src="/skills/unity_logo.png"/> Unity</nobr>
@@ -203,6 +224,9 @@ const pageTitle = "Ismael Moyano";
             <small class="big-tag" style="background-color: rgba(183,166,57,0.57)">
                 <nobr><img width="auto" height="28" alt="js_logo" style="outline: 0; transform: translateY(10%);" src="/skills/js_logo.png"/> JavaScript</nobr>
             </small>
+            <small class="big-tag" style="background-color: rgba(155,116,73,0.57)">
+                <nobr><img width="auto" height="28" alt="scrum_logo" style="outline: 0; transform: translateY(10%);" src="/skills/scrum_logo.png"/> Scrum</nobr>
+            </small>
         </div>
     </div>
 
@@ -213,16 +237,16 @@ const pageTitle = "Ismael Moyano";
         </p>
         <ol>
             <li>
-                I can't stand wedge cheese.
-            </li>
-            <li>
-                Someone threw a duck over our fence once, so we adopted it for a couple of months. Its name was "Colorines".
+                My first game development engine was GameMaker. My second was <nobr>Wario Ware: DIY</nobr>.
             </li>
             <li>
                 I'm always in some sort of idle dance, Cuphead-style.
             </li>
             <li>
-                I use bananas way too much as an ingredient when cooking.
+                Someone threw a duck over our fence once, so we adopted it for a couple of months. Its name was "Colorines".
+            </li>
+            <li>
+                I can't stand wedge cheese.
             </li>
             <li>
                 Two of my favorite game franchises are Dark Souls and Kirby. Opposites touch.
@@ -231,7 +255,7 @@ const pageTitle = "Ismael Moyano";
                 People say I have the softest cheeks they have ever seen. I agree.
             </li>
             <li>
-                My first game development engine was GameMaker. My second was <nobr>Wario Ware: DIY</nobr>.
+                I use bananas way too much as an ingredient when cooking.
             </li>
             <li>
                 Some of my favorite Pokémon are Porygon2, Rotom and Whimsicott.
@@ -244,33 +268,6 @@ const pageTitle = "Ismael Moyano";
             </li>
         </ol>
     </div>
-
-    
-    <!--<div id="contact">
-        <h2>Contact</h2>
-        <p>
-            Hit me up!
-        </p>
-
-        <form id="contact-form" method="POST">
-            <label>
-                Email:
-                <input type="email" name="from_name" required />
-            </label>
-            <br/>
-            <label>
-                Subject:
-                <input type="text" name="subject" required />
-            </label>
-            <br/>
-            <label>
-                Message:
-                <input type="text" name="message" required minlength="10" />
-            </label>
-            <br/>
-            <button>Send</button>
-        </form>
-    </div>-->
     
     <DaniEvan/>
 

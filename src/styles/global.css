@@ -81,6 +81,13 @@ p {
     line-height: 1.5;
 }
 
+.remark  {
+    line-height: 1.5;
+    border: 2px solid #78c2ad;
+    border-radius: 12px;
+    padding: 15px 15px 15px 15px;
+}
+
 ol  {
     line-height: 1.5;
     border: 2px solid #78c2ad;
@@ -185,6 +192,14 @@ video
     /*grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));*/
     grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
     gap: 3rem;
+    padding: 0;
+}
+
+.link-minicard-grid {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));*/
+    grid-template-columns: repeat(auto-fit, minmax(31ch, 1fr));
+    gap: 0.05rem;
     padding: 0;
 }
 
@@ -300,6 +315,11 @@ html::-webkit-scrollbar-track {
     font-size: 1.7em;
     margin-bottom: 0;
     line-height: 120%;
+}
+
+.itchio-card
+{
+    margin: 0 10px 0 10px;
 }
 
 /* Button */
