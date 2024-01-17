@@ -20,30 +20,30 @@ import Modal from "../components/Modal.astro";
         </div>
 
         <p>
-            Dani & Evan: Dinosaur Books is a visual novel based on the book series "The Adventures of Dani and Evan", more specifically on book number 1.
+            Dani & Evan: Dinosaur Books is an interactive book/visual novel based on book 1 of the series "The Adventures of Dani and Evan". It was developed in collaboration with the book publisher "Grupo Planeta".
         </p>
         <p>
-            The game aims to encourage young kids to read by including exploration segments, minigames and collectables in the form of the "Explorer's Notebook".
+            The game aims to encourage young kids to read by including exploration segments, minigames and collectables; in what the game calls "the Explorer's Notebook".
         </p>
         <p>
-            I worked as the programmer and designer of the game, but I was also in charge of a lot of other aspects such as animations, sound effects, and texts.
+            I worked as the official programmer and designer of the game, but also as the unofficial animator, writer and sound designer.
         </p>
 
         <h2 class="cool-things-h2">Cool things I did</h2>
 
         <div>
-            <h3 class="cool-things-h3">Text implementation and Japanese translation</h3>
+            <h3 class="cool-things-h3">Japanese translation</h3>
 
             <div class="cool-things">
                 <div class="column">
                     <p>
-                        I implemented the translation to the <nobr>8 languages</nobr> the game is available in.
+                        The game was translated to <nobr>8 languages</nobr> including Japanese and Russian, providing a fair share of challenges during development.
                     </p>
                     <p>
-                        Special mention to the Japanese and Russian translations, as they required a completely different set of fonts that proved a challenge to change in runtime.
+                        The main one was how to change every font in the game during runtime to allow for non-latin characters without breaking everything.
                     </p>
                     <p>
-                        A custom wrapper of the Unity TMP component allowed the right set of fonts and animations to be displayed for each dialog, providing a fun and rich reading experience.
+                        I solved the issue by developing a custom wrapper over the dialogue system and the Unity TMP component that allowed changing stylesheets seamlessly while ensuring every formatting still worked as intended.
                     </p>
                 </div>
                 <div class="column">
@@ -56,12 +56,12 @@ import Modal from "../components/Modal.astro";
         </div>
         <hr>
         <div>
-            <h3 class="cool-things-h3">Reusable and scalable chapter system</h3>
+            <h3 class="cool-things-h3">Modular chapter system</h3>
 
             <div class="cool-things">
                 <div class="column">
                     <p>
-                        The game's chapter system was built to be reusable and easy to extend.
+                        I build the game's chapter system to be reusable and easy to extend.
                     </p>
                     <p>
                         Everything runs in the same scene and is controlled by ScriptableObjects. Adding a new chapter or section is as easy as adding a new element to the list.
@@ -77,7 +77,7 @@ import Modal from "../components/Modal.astro";
         </div>
         <hr>
         <div>
-            <h3 class="cool-things-h3">Story adaptation and stage design</h3>
+            <h3 class="cool-things-h3">Book to game adaptation</h3>
 
             <div class="cool-things">
                 <div class="column">
@@ -124,7 +124,7 @@ import Modal from "../components/Modal.astro";
                         I implemented all the Nintendo SDKs needed to adapt input, saves, resolution, etc. to the Nintendo Switch.
                     </p>
                     <p>
-                        It was important to keep the controls simple, so I updated the game's input system to change seamlessly between controller and touch input.
+                        It was important to keep a no hassle control scheme, so I updated the game's input system to change seamlessly between controller and touch input (and mouse too because why not).
                     </p>
                 </div>
             </div>

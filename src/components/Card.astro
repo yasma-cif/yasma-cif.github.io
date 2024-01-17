@@ -51,7 +51,7 @@ const { card_id, image, title, body } = Astro.props;
 			<div class="img">
 				<img width="350" height="auto" src={image} class="card-img" alt="Project">
 			</div>
-			<h3>
+			<h3 style="margin-left: -20px; margin-right: -20px">
 				{title}
 			</h3>
 			<div class="tag-list">
@@ -111,6 +111,8 @@ const { card_id, image, title, body } = Astro.props;
 	{
 		text-align: center;
 		padding-bottom: 5px;
+		margin-left: -20px;
+		margin-right: -20px;
 	}
 
     .link-card:hover {

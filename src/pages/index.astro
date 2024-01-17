@@ -50,66 +50,75 @@ const pageTitle = "Ismael Moyano";
 
 <Layout pageTitle={pageTitle}>
     
-    <div id="intro">
+    <div id="intro" class="intro">
         <div class="topimg">
             <h1>Ismael Moyano</h1>
             <br/>
+            
             <small class="subtitle">Game Programmer etc.</small>
             <br/>
             <br/>
             <br/>
-            <img width="250" height="auto" alt="Ismael" class="round-borders" src="/ismael.png"/>
+            <img width="275" height="auto" alt="Ismael" class="round-borders" src="/ismael.png"/>
+            <div style="font-family: 'Pacifico', cursive; font-size: 1.8rem; text-align: center; margin-bottom: 1%; margin-top: 1%">Find me in: </div>
+
+            <p class="social">
+                <!--<a href="https://twitter.com/leamsy_azurae" target="_blank" rel="noopener noreferrer">
+                    <img width="auto" height="32" alt="Twitter" style="outline: 0;" src="/twitter_logo.png"/>
+                </a>-->
+                <a href="https://www.linkedin.com/in/leamsy/" target="_blank" rel="noopener noreferrer">
+                    <img width="auto" height="35" alt="LinkedIn" style="outline: 0;" src="/linkedin_logo.png"/>
+                </a>
+                <a href="https://leamsy.itch.io/" target="_blank" rel="noopener noreferrer">
+                    <img width="auto" height="35" alt="itch.io" style="outline: 0;" src="/itchio_logo.png"/>
+                </a>
+                <a href="mailto:leamsy.azurae@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img width="auto" height="35" alt="Mail" style="outline: 0;" src="/mail_logo.png"/>
+                </a>
+            </p>
+            <br/>
         </div>
 
-        <div style="font-family: 'Pacifico', cursive; font-size: 1.5rem; text-align: center; margin-bottom: 1%; margin-top: 1%">Find me in: </div>
-        <p class="social">
-            <!--<a href="https://twitter.com/leamsy_azurae" target="_blank" rel="noopener noreferrer">
-                <img width="auto" height="32" alt="Twitter" style="outline: 0;" src="/twitter_logo.png"/>
-            </a>-->
-            <a href="https://www.linkedin.com/in/leamsy/" target="_blank" rel="noopener noreferrer">
-                <img width="auto" height="32" alt="LinkedIn" style="outline: 0;" src="/linkedin_logo.png"/>
-            </a>
-            <a href="https://leamsy.itch.io/" target="_blank" rel="noopener noreferrer">
-                <img width="auto" height="32" alt="itch.io" style="outline: 0;" src="/itchio_logo.png"/>
-            </a>
-            <a href="mailto:leamsy.azurae@gmail.com" target="_blank" rel="noopener noreferrer">
-                <img width="auto" height="32" alt="Mail" style="outline: 0;" src="/mail_logo.png"/>
-            </a>
-        </p>
-        
         <div class="bio">
-            <p>
-                Hey! I'm Ismael and I like to create cool games.
+            <p style="text-align: center">
+                ✨ <b>Hey! I'm Ismael and I like to create <nobr>cool games.</nobr></b>
             </p>
-            <p>
-                My main strength is programming, but I like to think of myself more like a swiss army knife. I like to polish cool things to perfection, be it code logic, touch effects or screen transitions.
+            <p style="font-size: 25px">
+               🖥️ <b>I am a programmer, but first of all, I am a developer.</b>
             </p>
-            <p>
-                I studied Software Engineering with a Master's in Gamedev; and have a strong knowledge of Unity and C#. I also tinker with Unreal and C++ from time to time.
+            <p style="margin-left: 6.4%">
+                I don't shy away from multiclassing, and love contributing to other parts of the development process.
             </p>
-            <p>
-                Audio is a personal passion of mine: I have multiple games released using FMOD Studio, with most of the sound effects designed by me. I am also into Music Composition, but mostly as a hobby. All my personal projects use my own songs <nobr>though :).</nobr>
+            <p style="font-size: 25px">
+                <b>📚 I am well versed in both Unity and C#, as well as other languages.</b>
+            </p>
+            <p style="margin-left: 6.4%">
+                I studied Software Engineering with a Master's in Game Development, and have gathered experienced with multiple programming languages such as C++ or Javascript, as well as engines such as Unreal or Godot.
+            </p>
+            <p style="font-size: 25px">
+                <b>🎧 Audio is a personal passion of mine.</b>
+            </p>
+            <p style="margin-left: 6.4%">
+                I have professional experience in sound design and programming with FMOD Studio. I am also an amateur composer, but that is mostly a game jam <nobr>skill :).</nobr>
             </p>
         </div>
-
-        
-        <br/>
-        <div class="button">
-            <a href="https://drive.google.com/file/d/1CP0sZpFRWyfmAYmSGpIeM8UbY8i1p2Yh/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                <button>My resume</button>
-            </a>
-        </div>
+    </div>
+    <br/>
+    <div class="button">
+        <a href="https://drive.google.com/file/d/1CP0sZpFRWyfmAYmSGpIeM8UbY8i1p2Yh/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <button>My resume</button>
+        </a>
     </div>
         
     <div id="projects">
         <h2>Projects</h2>
 
-        <ul role="list" class="link-card-grid">
+        <ul class="link-card-grid">
             <Card
                     card_id="danievan"
                     image="/danievan/danievan.png"
                     title="Dani & Evan: Dinosaur Books"
-                    body="Explore the hidden dinosaur world alongside Dani and Evan in this visual novel for kids, with exploration segments, minigames and collectables."
+                    body="A dinotastic interactive book, with exploration segments, minigames and collectables."
             >
                 <small class="tag" style="background-color: rgba(255,96,66,0.57)">VisualNovel </small>
                 <small class="tag" style="background-color: rgba(255,79,247,0.57)">Mobile </small>
@@ -121,7 +130,7 @@ const pageTitle = "Ismael Moyano";
                     card_id="brokenechoes"
                     image="/brokenechoes/brokenechoes.png"
                     title="Broken Echoes"
-                    body="After awaking in an oddly familiar island, Lea must face forces that threaten space and time in this action-adventure game with cinematic cutscenes."
+                    body="An action-adventure game with thrilling combat, cinematic cutscenes and cool music."
             >
 
                 <small class="tag" style="background-color: rgba(255,96,66,0.57)">Action-adventure </small>
@@ -133,7 +142,7 @@ const pageTitle = "Ismael Moyano";
                     card_id="hitchhiker"
                     image="/hitchhiker/hitchhiker.png"
                     title="The Vanishing Hitchhiker"
-                    body="Make choices and expect the unexpected in this spooky visual novel for Nintendo Switch."
+                    body="A spooky visual novel with choices and multiple endings, for the Nintendo Switch."
             >
 
                 <small class="tag" style="background-color: rgba(255,96,66,0.57)">VisualNovel </small>
@@ -145,7 +154,7 @@ const pageTitle = "Ismael Moyano";
                     card_id="crabmelo"
                     image="/crabmelo/crabmelo.png"
                     title="Crabmelo's Smoothie Stand"
-                    body="Get fruits to your stand to make delicious smoothies and help cheer up your customers in this narrative puzzle game."
+                    body="A narrative puzzle game with 2.5D graphics, smoothies and talking seafood."
             >
 
                 <small class="tag" style="background-color: rgba(255,96,66,0.57)">Puzzle </small>
@@ -157,10 +166,7 @@ const pageTitle = "Ismael Moyano";
 
         <div style="margin-top: 60px; text-align: center;">
             <p class="remark" style="margin: 0 8% 0 8%">
-                This list is just comprised of highlights. If you want to see smaller, more experimental projects, feel free to check out <a href="https://ad-astra-studios.itch.io/broken-echoes" target="_blank" rel="noopener noreferrer" style="color: #fdebf3">my itch.io</a>!
-                <!--<a href="https://leamsy.itch.io/" target="_blank" rel="noopener noreferrer" style="">
-                    <img width="auto" height="60px" alt="itch.io" src="/itchio_logo.png"/>
-                </a>-->
+                This list is just comprised of highlights. If you want to see smaller, more experimental projects, feel free to check out <a href="https://leamsy.itch.io/" target="_blank" rel="noopener noreferrer" style="color: #fdebf3">my itch.io</a>!
             </p>
             <br>
             <ul role="list" class="link-minicard-grid">
@@ -233,9 +239,9 @@ const pageTitle = "Ismael Moyano";
     <div id="about">
         <h2>About me</h2>
         <p>
-            These are 10 facts about me!
+            To prove that I am a cool human, here are 10 facts about me!
         </p>
-        <ol>
+        <ol style="margin: 0 8% 0 8%">
             <li>
                 My first game development engine was GameMaker. My second was <nobr>Wario Ware: DIY</nobr>.
             </li>
@@ -261,7 +267,7 @@ const pageTitle = "Ismael Moyano";
                 Some of my favorite Pokémon are Porygon2, Rotom and Whimsicott.
             </li>
             <li>
-                Like 90% of my daily music listening is comprised of game soundtracks.
+                Approximately 90% of my daily music listening is comprised of game soundtracks.
             </li>
             <li>
                 My pen name "Leamsy" comes from the greek word "Leamsis", meaning lighthouse.
