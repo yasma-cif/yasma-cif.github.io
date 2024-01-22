@@ -76,7 +76,7 @@ b {
 /* Paragraphs */
 p {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     hyphens: none;
     line-height: 1.5;
 }
@@ -129,12 +129,16 @@ video
 .topimg {
     margin: 20px 0 0 0;
     text-align: center;
-    flex: 50%;
+    flex: 40%;
+}
+
+.projects{
+    flex: 60%;
 }
 
 .bio{
-    flex: 55%;
-    margin: 23px 0 0 0;
+    margin: 10px 20px 0 20px;
+    text-align: left;
 }
 
 .bannerimg{
@@ -210,7 +214,7 @@ video
 
 .intro {
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /* Theme Icon */
