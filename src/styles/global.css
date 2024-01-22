@@ -47,7 +47,7 @@ html {
 
 body {
     max-width: 1500px;
-    margin: 20px;
+    margin: 0 auto;
 }
 
 /* Headings */
@@ -139,6 +139,10 @@ video
 .bio{
     margin: 10px 20px 0 20px;
     text-align: left;
+    font-size: 1.0em;
+    border: 2px solid #78c2ad;
+    border-radius: 12px;
+    padding: 10px 20px 0 20px;
 }
 
 .bannerimg{
@@ -200,16 +204,20 @@ video
 .link-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
-    gap: 3rem;
+    column-gap: 2.5rem;
+    row-gap: 0;
     padding: 0;
+    margin: 20px;
 }
 
 .link-minicard-grid {
     display: grid;
     /*grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));*/
     grid-template-columns: repeat(auto-fit, minmax(31ch, 1fr));
-    gap: 0.05rem;
+    column-gap: 0.5rem;
+    row-gap: 0;
     padding: 0;
+    margin: 20px;
 }
 
 .intro {
@@ -376,6 +384,15 @@ button {
 @media only screen and (max-width: 800px) {
     body {
         margin: 15px 15px 15px 15px;
+    }
+
+    .bio{
+        margin: 10px 20px 0 20px;
+        text-align: left;
+        font-size: 1.0em;
+        border: 0px solid #78c2ad;
+        border-radius: 12px;
+        padding: 0;
     }
     
     .link-images img {
