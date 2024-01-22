@@ -76,7 +76,7 @@ b {
 /* Paragraphs */
 p {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     hyphens: none;
     line-height: 1.5;
 }
@@ -129,12 +129,20 @@ video
 .topimg {
     margin: 20px 0 0 0;
     text-align: center;
-    flex: 50%;
+    flex: 40%;
+}
+
+.projects{
+    flex: 60%;
 }
 
 .bio{
-    flex: 55%;
-    margin: 23px 0 0 0;
+    margin: 10px 20px 0 20px;
+    text-align: left;
+    font-size: 1.0em;
+    border: 2px solid #78c2ad;
+    border-radius: 12px;
+    padding: 10px 20px 0 20px;
 }
 
 .bannerimg{
@@ -196,21 +204,25 @@ video
 .link-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
-    gap: 3rem;
+    column-gap: 2.5rem;
+    row-gap: 0;
     padding: 0;
+    margin: 20px;
 }
 
 .link-minicard-grid {
     display: grid;
     /*grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));*/
     grid-template-columns: repeat(auto-fit, minmax(31ch, 1fr));
-    gap: 0.05rem;
+    column-gap: 0.5rem;
+    row-gap: 0;
     padding: 0;
+    margin: 20px;
 }
 
 .intro {
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /* Theme Icon */
@@ -372,6 +384,15 @@ button {
 @media only screen and (max-width: 800px) {
     body {
         margin: 15px 15px 15px 15px;
+    }
+
+    .bio{
+        margin: 10px 20px 0 20px;
+        text-align: left;
+        font-size: 1.0em;
+        border: 0px solid #78c2ad;
+        border-radius: 12px;
+        padding: 0;
     }
     
     .link-images img {
