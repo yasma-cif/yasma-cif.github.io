@@ -20,9 +20,9 @@ const { card_id, image, title, href } = Astro.props;
 	<li class="link-card">
 		<a class="itchio-card" href={href} target="_blank" rel="noopener noreferrer">
 			<div class="img">
-				<img width="auto" height="100px" src={image} class="card-img" alt="Project">
+				<img src={image} class="card-img" alt="Project">
 			</div>
-			<h3 style="font-size: 1.2em">
+			<h3>
 				{title}
 			</h3>
 		</a>
@@ -58,7 +58,7 @@ const { card_id, image, title, href } = Astro.props;
     h3 {
         margin: 10px;
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         font-weight: normal;
         text-align: center;
     }
@@ -81,5 +81,17 @@ const { card_id, image, title, href } = Astro.props;
     .link-card:hover {
         transform: scale(1.05);
     }
+
+	.card-img {
+		width: auto;
+		height: 120px;
+	}
+
+	@media only screen and (max-width: 800px) {
+		.card-img {
+			width: 350px;
+		}
+	}
+	
 </style>
 

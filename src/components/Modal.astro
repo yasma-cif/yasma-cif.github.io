@@ -45,15 +45,20 @@ const {modal_id} = Astro.props;
 
 <style lang="scss">
   dialog {
-    max-width: 1000px;
+    max-width: 1400px;
     position: fixed;
     opacity: 0;
     transition: opacity 0.25s;
     flex-direction: column;
     align-items: center;
-    background-color: #1e1e2e;
+    background-image: url('/background.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
     border-radius: 16px;
     color: #fdebf3;
+    border-color: #78c2ad;
     &::backdrop {
       position: fixed;
       top: 0px;

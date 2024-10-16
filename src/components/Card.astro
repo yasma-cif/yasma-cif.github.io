@@ -49,7 +49,7 @@ const { card_id, image, title, body } = Astro.props;
 	<li class="link-card">
 		<a id={"clickable" + card_id}>
 			<div class="img">
-				<img width="350" height="auto" src={image} class="card-img" alt="Project">
+				<img src={image} class="card-img" alt="Project">
 			</div>
 			<h3 style="margin-left: -20px; margin-right: -20px">
 				{title}
@@ -93,13 +93,12 @@ const { card_id, image, title, body } = Astro.props;
     h3 {
         margin: 10px;
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 1.7rem;
+        font-size: 2.4rem;
         font-weight: normal;
         text-align: center;
     }
 
     p {
-        font-size: 1em;
         line-height: 1.5;
         text-indent: 0;
         text-align: center;
@@ -118,5 +117,21 @@ const { card_id, image, title, body } = Astro.props;
     .link-card:hover {
         transform: scale(1.05);
     }
+
+	.card-img {
+		width: 500px;
+		height: auto;
+	}
+	
+	@media only screen and (max-width: 800px) {
+		.card-img {
+			width: 350px;
+		}
+
+		h3 {
+			font-size: 2rem;
+		}
+	}
+	
 </style>
 

@@ -7,7 +7,7 @@ import Modal from '../components/Modal.astro';
 import DaniEvan from './DaniEvan.astro';
 import BrokenEchoes from "./BrokenEchoes.astro";
 import Hitchhiker from "./Hitchhiker.astro";
-import Crabmelo from "./Crabmelo.astro";
+import Pinzo from "./Pinzo.astro";
 
 import Minicard from "../components/Minicard.astro";
 
@@ -54,12 +54,12 @@ const pageTitle = "Ismael Moyano";
             <h1>Ismael Moyano</h1>
             <br/>
             
-            <small class="subtitle">Game Programmer etc.</small>
+            <small class="subtitle">Game Developer</small>
             <br/>
             <br/>
             <br/>
             <img width="250" height="auto" alt="Ismael" class="round-borders" src="/ismael.png"/>
-            <div style="font-family: 'Pacifico', cursive; font-size: 1.6rem; text-align: center; margin-bottom: 1%; margin-top: 1%">Find me in: </div>
+            <div style="font-size: 0.6rem; text-align: center; margin-bottom: 1%; margin-top: 1%"><h1>Find me in: </h1></div>
 
             <p class="social">
                 <!--<a href="https://twitter.com/leamsy_azurae" target="_blank" rel="noopener noreferrer">
@@ -75,130 +75,151 @@ const pageTitle = "Ismael Moyano";
                     <img width="auto" height="35" alt="Mail" style="outline: 0;" src="/mail_logo.png"/>
                 </a>
             </p>
+            <br>
             <div class="button">
                 <a href="https://drive.google.com/file/d/14AUnL6SMb305-V5JuXpW6geRzNuwP8e_/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <button>My resume</button>
                 </a>
             </div>
             <br>
-
-
-            <div class="bio">
-                <p style="text-align: center">
-                    ✨ <b>Hey! I'm Ismael and I like to create <nobr>cool games.</nobr></b>
-                </p>
-                <p style="font-size: 25px">
-                    🖥️ <b>I'm a programmer, but first of all, I'm a developer.</b>
-                </p>
-                <p style="margin-left: 6.4%">
-                    I don't shy away from multiclassing, and love contributing to other parts of the development process.
-                </p>
-                <p style="font-size: 25px">
-                    <b>📚 I'm well versed in Unity, C# and more!</b>
-                </p>
-                <p style="margin-left: 6.4%">
-                    I studied Software Engineering with a Master's in Game Development, and have gathered experience with multiple programming languages such as C++ or Javascript. I'm in the process of learning Unreal too!
-                </p>
-                <p style="font-size: 25px">
-                    <b>🎧 Audio is a personal passion of mine.</b>
-                </p>
-                <p style="margin-left: 6.4%">
-                    I have professional experience in sound design and programming with FMOD Studio. I'm also an amateur composer, but that is mostly a game jam <nobr>skill :).</nobr>
-                </p>
-            </div>
         </div>
 
-        <div id="projects" class="projects">
-            <h2>Projects</h2>
 
-            <ul class="link-card-grid">
-                <Card
-                        card_id="danievan"
-                        image="/danievan/danievan.png"
-                        title="Dani & Evan: Dinosaur Books"
-                        body="A dinotastic interactive book, with exploration segments, minigames and collectables."
+        <div class="bio">
+            <p style="text-align: center">
+                ✨ <b>Hi! I'm Ismael and I like to create <nobr>cool games.</nobr></b>
+            </p>
+            <p style="font-size: 25px">
+                🖥️ <b>I'm a programmer, but first of all, I'm a developer.</b>
+            </p>
+            <p style="margin-left: 6.4%">
+                I don't shy away from multiclassing, and love contributing to other parts of the development process.
+            </p>
+            <p style="font-size: 25px">
+                <b>📚 I'm well versed in Unity, C# and more!</b>
+            </p>
+            <p style="margin-left: 6.4%">
+                I studied Software Engineering with a Master's in Game Development, and have gathered experience with multiple programming languages such as C++ or Javascript. I'm in the process of learning Unreal too!
+            </p>
+            <p style="font-size: 25px">
+                <b>🎧 Audio is a personal passion of mine.</b>
+            </p>
+            <p style="margin-left: 6.4%">
+                I have professional experience in sound design and programming with FMOD Studio. I'm also an amateur composer, but that is mostly a game jam <nobr>skill :).</nobr>
+            </p>
+        </div>
+
+        
+    </div>
+
+    <div id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <ul class="link-card-grid">
+            <Card
+                    card_id="bodycombat"
+                    image="/bodycombat/bodycombat.png"
+                    title="Les Mills Bodycombat"
+                    body="A dinotastic interactive book, with exploration segments, minigames and collectables."
+            >
+                <small class="tag" style="background-color: rgba(255,96,66,0.57)">Fitness </small>
+                <small class="tag" style="background-color: rgba(255,79,247,0.57)">VR </small>
+                <small class="tag" style="background-color: rgba(111,239,88,0.57)">Live Game </small>
+
+            </Card>
+            <Card
+                    card_id="danievan"
+                    image="/danievan/danievan.png"
+                    title="Dani & Evan: Dinosaur Books"
+                    body="A dinotastic interactive book, with exploration segments, minigames and collectables."
+            >
+                <small class="tag" style="background-color: rgba(255,96,66,0.57)">Visual Novel </small>
+                <small class="tag" style="background-color: rgba(255,79,247,0.57)">Mobile </small>
+                <small class="tag" style="background-color: rgba(255,79,247,0.57)">Nintendo Switch </small>
+                <small class="tag" style="background-color: rgba(111,239,88,0.57)">Released </small>
+
+            </Card>
+            <Card
+                    card_id="brokenechoes"
+                    image="/brokenechoes/brokenechoes.png"
+                    title="Broken Echoes"
+                    body="An action-adventure game with thrilling combat, cinematic cutscenes and cool music."
+            >
+
+                <small class="tag" style="background-color: rgba(255,96,66,0.57)">Action/Adventure </small>
+                <small class="tag" style="background-color: rgba(255,79,247,0.57)">PC </small>
+                <small class="tag" style="background-color: rgba(111,239,88,0.57)">Final Project </small>
+
+            </Card>
+            <Card
+                    card_id="hitchhiker"
+                    image="/hitchhiker/hitchhiker.png"
+                    title="The Vanishing Hitchhiker"
+                    body="A spooky visual novel with choices and multiple endings, for the Nintendo Switch."
+            >
+
+                <small class="tag" style="background-color: rgba(255,96,66,0.57)">Visual Novel </small>
+                <small class="tag" style="background-color: rgba(255,79,247,0.57)">Nintendo Switch </small>
+                <small class="tag" style="background-color: rgba(111,239,88,0.57)">Released </small>
+
+            </Card>
+            <Card
+                    card_id="pinzo"
+                    image="/pinzo/pinzo.png"
+                    title="Pinzo's Smoothie Stand"
+                    body="A narrative puzzle game with 2.5D graphics, smoothies and talking seafood."
+            >
+
+                <small class="tag" style="background-color: rgba(255,96,66,0.57)">Puzzle </small>
+                <small class="tag" style="background-color: rgba(255,79,247,0.57)">PC </small>
+                <small class="tag" style="background-color: rgba(111,239,88,0.57)">In Development </small>
+
+            </Card>
+        </ul>
+
+        <div style="margin-top: 30px; text-align: center;">
+            <!--<p class="check-itchio">
+                Feel free to check out <a href="https://leamsy.itch.io/" target="_blank" rel="noopener noreferrer" style="color: #fdebf3">my itch.io</a> games too!
+            </p>
+            <br>-->
+            <ul role="list" class="link-minicard-grid">
+
+                <Minicard
+                        card_id="remember"
+                        image="/itchio/remember.png"
+                        title="Remember"
+                        href="https://leamsy.itch.io/remember"
                 >
-                    <small class="tag" style="background-color: rgba(255,96,66,0.57)">VisualNovel </small>
-                    <small class="tag" style="background-color: rgba(255,79,247,0.57)">Mobile </small>
-                    <small class="tag" style="background-color: rgba(255,79,247,0.57)">NintendoSwitch </small>
-                    <small class="tag" style="background-color: rgba(111,239,88,0.57)">Released </small>
-
-                </Card>
-                <Card
-                        card_id="brokenechoes"
-                        image="/brokenechoes/brokenechoes.png"
-                        title="Broken Echoes"
-                        body="An action-adventure game with thrilling combat, cinematic cutscenes and cool music."
+                </Minicard>
+                <Minicard
+                        card_id="tower_sins"
+                        image="/itchio/tower_sins.png"
+                        title="Tower of Sins"
+                        href="https://leamsy.itch.io/tower-of-sins"
                 >
-
-                    <small class="tag" style="background-color: rgba(255,96,66,0.57)">Action-adventure </small>
-                    <small class="tag" style="background-color: rgba(255,79,247,0.57)">PC </small>
-                    <small class="tag" style="background-color: rgba(111,239,88,0.57)">FinalProject </small>
-
-                </Card>
-                <Card
-                        card_id="hitchhiker"
-                        image="/hitchhiker/hitchhiker.png"
-                        title="The Vanishing Hitchhiker"
-                        body="A spooky visual novel with choices and multiple endings, for the Nintendo Switch."
+                </Minicard>
+                <Minicard
+                        card_id="ratita"
+                        image="/itchio/ratita.png"
+                        title="ratitajumper_final_final"
+                        href="https://leamsy.itch.io/ratitajumper-final-final-ahorasiquesi"
                 >
-
-                    <small class="tag" style="background-color: rgba(255,96,66,0.57)">VisualNovel </small>
-                    <small class="tag" style="background-color: rgba(255,79,247,0.57)">NintendoSwitch </small>
-                    <small class="tag" style="background-color: rgba(111,239,88,0.57)">Released </small>
-
-                </Card>
-                <Card
-                        card_id="crabmelo"
-                        image="/crabmelo/crabmelo.png"
-                        title="Crabmelo's Smoothie Stand"
-                        body="A narrative puzzle game with 2.5D graphics, smoothies and talking seafood."
+                </Minicard>
+                <Minicard
+                        card_id="innerself"
+                        image="/itchio/innerself.png"
+                        title="Innerself"
+                        href="https://leamsy.itch.io/innerselves"
                 >
-
-                    <small class="tag" style="background-color: rgba(255,96,66,0.57)">Puzzle </small>
-                    <small class="tag" style="background-color: rgba(255,79,247,0.57)">PC </small>
-                    <small class="tag" style="background-color: rgba(111,239,88,0.57)">InDevelopment </small>
-
-                </Card>
+                </Minicard>
+                <Minicard
+                        card_id="mecabeat"
+                        image="/itchio/mecabeat.png"
+                        title="Mecabeat"
+                        href="https://leamsy.itch.io/mecabeat"
+                >
+                </Minicard>
             </ul>
-
-            <div style="margin-top: 30px; text-align: center;">
-                <!--<p class="check-itchio">
-                    Feel free to check out <a href="https://leamsy.itch.io/" target="_blank" rel="noopener noreferrer" style="color: #fdebf3">my itch.io</a> games too!
-                </p>
-                <br>-->
-                <ul role="list" class="link-minicard-grid">
-
-                    <Minicard
-                            card_id="tower_sins"
-                            image="/itchio/tower_sins.png"
-                            title="Tower of Sins"
-                            href="https://leamsy.itch.io/tower-of-sins"
-                    >
-                    </Minicard>
-                    <Minicard
-                            card_id="ratita"
-                            image="/itchio/ratita.png"
-                            title="ratitajumper_final_final"
-                            href="https://leamsy.itch.io/ratitajumper-final-final-ahorasiquesi"
-                    >
-                    </Minicard>
-                    <Minicard
-                            card_id="innerself"
-                            image="/itchio/innerself.png"
-                            title="Innerself"
-                            href="https://leamsy.itch.io/innerselves"
-                    >
-                    </Minicard>
-                    <Minicard
-                            card_id="mecabeat"
-                            image="/itchio/mecabeat.png"
-                            title="Mecabeat"
-                            href="https://leamsy.itch.io/mecabeat"
-                    >
-                    </Minicard>
-                </ul>
-            </div>
         </div>
     </div>
     
@@ -280,6 +301,6 @@ const pageTitle = "Ismael Moyano";
 
     <Hitchhiker/>
     
-    <Crabmelo/>
+    <Pinzo/>
     
 </Layout>
