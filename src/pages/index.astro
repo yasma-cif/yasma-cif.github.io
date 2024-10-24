@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from "../components/Card.astro";
 import Modal from '../components/Modal.astro';
 
+import Bodycombat from './Bodycombat.astro';
 import DaniEvan from './DaniEvan.astro';
 import BrokenEchoes from "./BrokenEchoes.astro";
 import Hitchhiker from "./Hitchhiker.astro";
@@ -52,14 +53,20 @@ const pageTitle = "Ismael Moyano";
     <div id="intro" class="intro">
         <div class="topimg">
             <h1>Ismael Moyano</h1>
-            <br/>
+
+            <small class="subtitle" style="background-color: #4d8878">Game Developer</small>
             
-            <small class="subtitle">Game Developer</small>
-            <br/>
-            <br/>
-            <br/>
+            <br/><br/><br/>
+            
             <img width="250" height="auto" alt="Ismael" class="round-borders" src="/ismael.png"/>
-            <div style="font-size: 0.6rem; text-align: center; margin-bottom: 1%; margin-top: 1%"><h1>Find me in: </h1></div>
+            
+            <div class="bio">
+                <p>
+                    ✨ <b>Hi! I'm Ismael and I like to create <nobr>cool games.</nobr></b>
+                </p>
+            </div>
+            
+            <!--<div style="font-size: 0.6rem; text-align: center; margin-bottom: 10px; margin-top: 30px"><h1>Find me in: </h1></div>-->
 
             <p class="social">
                 <!--<a href="https://twitter.com/leamsy_azurae" target="_blank" rel="noopener noreferrer">
@@ -77,7 +84,7 @@ const pageTitle = "Ismael Moyano";
             </p>
             <br>
             <div class="button">
-                <a href="https://drive.google.com/file/d/14AUnL6SMb305-V5JuXpW6geRzNuwP8e_/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1FdlfS_V0wRnthGfFefx1auf_w08YDLtr/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <button>My resume</button>
                 </a>
             </div>
@@ -85,7 +92,7 @@ const pageTitle = "Ismael Moyano";
         </div>
 
 
-        <div class="bio">
+        <!--<div class="bio">
             <p style="text-align: center">
                 ✨ <b>Hi! I'm Ismael and I like to create <nobr>cool games.</nobr></b>
             </p>
@@ -107,20 +114,19 @@ const pageTitle = "Ismael Moyano";
             <p style="margin-left: 6.4%">
                 I have professional experience in sound design and programming with FMOD Studio. I'm also an amateur composer, but that is mostly a game jam <nobr>skill :).</nobr>
             </p>
-        </div>
+        </div>-->
 
         
     </div>
 
     <div id="projects" class="projects">
-        <h2>Projects</h2>
 
-        <ul class="link-card-grid">
+        <div class="link-card-grid">
             <Card
                     card_id="bodycombat"
                     image="/bodycombat/bodycombat.png"
                     title="Les Mills Bodycombat"
-                    body="A dinotastic interactive book, with exploration segments, minigames and collectables."
+                    body="An intense fitness game where the coaches will make you sweat!"
             >
                 <small class="tag" style="background-color: rgba(255,96,66,0.57)">Fitness </small>
                 <small class="tag" style="background-color: rgba(255,79,247,0.57)">VR </small>
@@ -131,7 +137,7 @@ const pageTitle = "Ismael Moyano";
                     card_id="danievan"
                     image="/danievan/danievan.png"
                     title="Dani & Evan: Dinosaur Books"
-                    body="A dinotastic interactive book, with exploration segments, minigames and collectables."
+                    body="A dinotastic interactive book, with exploration, minigames and collectables."
             >
                 <small class="tag" style="background-color: rgba(255,96,66,0.57)">Visual Novel </small>
                 <small class="tag" style="background-color: rgba(255,79,247,0.57)">Mobile </small>
@@ -143,7 +149,7 @@ const pageTitle = "Ismael Moyano";
                     card_id="brokenechoes"
                     image="/brokenechoes/brokenechoes.png"
                     title="Broken Echoes"
-                    body="An action-adventure game with thrilling combat, cinematic cutscenes and cool music."
+                    body="An action/adventure game with thrilling combat, cinematic cutscenes and cool music."
             >
 
                 <small class="tag" style="background-color: rgba(255,96,66,0.57)">Action/Adventure </small>
@@ -175,9 +181,9 @@ const pageTitle = "Ismael Moyano";
                 <small class="tag" style="background-color: rgba(111,239,88,0.57)">In Development </small>
 
             </Card>
-        </ul>
+        </div>
 
-        <div style="margin-top: 30px; text-align: center;">
+        <div style="margin-top: 80px; text-align: center;">
             <!--<p class="check-itchio">
                 Feel free to check out <a href="https://leamsy.itch.io/" target="_blank" rel="noopener noreferrer" style="color: #fdebf3">my itch.io</a> games too!
             </p>
@@ -223,7 +229,7 @@ const pageTitle = "Ismael Moyano";
         </div>
     </div>
     
-    <div id="skills">
+    <!--<div id="skills">
         <h2>Skills</h2>
         <div style="line-height: 400%;">
             <small class="big-tag" style="background-color: rgba(236,236,236,0.57);">
@@ -254,46 +260,56 @@ const pageTitle = "Ismael Moyano";
                 <nobr><img width="auto" height="28" alt="scrum_logo" style="outline: 0; transform: translateY(15%);" src="/skills/scrum_logo.png"/> Scrum</nobr>
             </small>
         </div>
-    </div>
+    </div>-->
 
-    <div id="about">
-        <h2>About me</h2>
-        <p>
-            To prove that I am a cool human, here are 10 facts about me!
-        </p>
-        <ol style="margin: 0 8% 0 8%">
+    <div id="about" class="about">
+        <h3 style="margin-bottom: -10px">But just who is this Ismael fellow?</h3>
+        <h2>Here are 10 random facts about me!</h2>
+        
+        <ol style="margin: 20px 12% 0 12%; padding-top: 20px; padding-bottom: 20px">
             <li>
                 My first game development engine was GameMaker. My second was <nobr>Wario Ware: DIY</nobr>.
             </li>
+            <br>
             <li>
                 I'm always in some sort of idle dance, Cuphead-style.
             </li>
+            <br>
             <li>
                 Someone threw a duck over our fence once, so we adopted it for a couple of months. Its name was "Colorines".
             </li>
+            <br>
             <li>
                 I can't stand wedge cheese.
             </li>
+            <br>
             <li>
                 Two of my favorite game franchises are Dark Souls and Kirby. Opposites touch.
             </li>
+            <br>
             <li>
                 People say I have the softest cheeks they have ever seen. I agree.
             </li>
+            <br>
             <li>
                 I use bananas way too much as an ingredient when cooking.
             </li>
+            <br>
             <li>
                 Some of my favorite Pokémon are Porygon2, Rotom and Whimsicott.
             </li>
+            <br>
             <li>
                 Approximately 90% of my daily music listening is comprised of game soundtracks.
             </li>
+            <br>
             <li>
                 My pen name "Leamsy" comes from the greek word "Leamsis", meaning lighthouse.
             </li>
         </ol>
     </div>
+
+    <!--<Bodycombat/>-->
     
     <DaniEvan/>
 

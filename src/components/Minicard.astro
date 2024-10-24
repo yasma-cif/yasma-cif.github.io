@@ -16,7 +16,7 @@ const { card_id, image, title, href } = Astro.props;
 	
 </script>
 
-<minicard-element data-card_id={card_id}>
+<minicard-element data-card_id={card_id} class="card-element">
 	<li class="link-card">
 		<a class="itchio-card" href={href} target="_blank" rel="noopener noreferrer">
 			<div class="img">
@@ -30,6 +30,10 @@ const { card_id, image, title, href } = Astro.props;
 </minicard-element>
 
 <style>
+	.card-element {
+		flex: 0 0 calc(20% - 40px);
+	}
+	
     .link-card {
         list-style: none;
         display: flex;
@@ -83,13 +87,13 @@ const { card_id, image, title, href } = Astro.props;
     }
 
 	.card-img {
-		width: auto;
-		height: 120px;
+		width: 315px;
+		height: auto;
 	}
 
 	@media only screen and (max-width: 800px) {
 		.card-img {
-			width: 350px;
+			width: 315px;
 		}
 	}
 	

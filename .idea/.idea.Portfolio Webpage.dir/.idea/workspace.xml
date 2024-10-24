@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ab2d72a-fc23-4588-b524-f742a601aa64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/bodycombat/bodycombat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bodycombat/bodycombat_full.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/itchio/remember.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/pinzo/pinzo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/pinzo/videos/pinzo_banner.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/pinzo/videos/pinzo_editor.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Pinzo.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Portfolio Webpage.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Portfolio Webpage.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/crabmelo/crabmelo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/crabmelo/videos/crabmelo_banner.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/crabmelo/videos/crabmelo_editor.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Crabmelo.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
-    </list>
+    <list default="true" id="3ab2d72a-fc23-4588-b524-f742a601aa64" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,6 +79,7 @@
       <workItem from="1728638891139" duration="291000" />
       <workItem from="1728639205602" duration="3145000" />
       <workItem from="1728645717029" duration="288000" />
+      <workItem from="1729256318486" duration="595000" />
     </task>
     <servers />
   </component>

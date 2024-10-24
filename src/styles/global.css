@@ -56,7 +56,7 @@ body {
 }
 
 /* Headings */
-h1, h2 {
+h1, h2, h3 {
     /*font-family: 'Pacifico', cursive;*/
     font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
@@ -64,19 +64,20 @@ h1, h2 {
 
 h1 {
     font-size: 3em;
-    margin: 0;
-    line-height: 130%;
+    margin: 20px 0 20px 0;
 }
 
 h2 {
-    text-decoration: underline #375a7f;
+    /*text-decoration: underline #375a7f;
     text-decoration-thickness: 4px;
-    text-underline-offset: 6px;
+    text-underline-offset: 6px;*/
     font-size: 2em;
-    margin-bottom: 0;
+    text-align: center;
 }
 
-b {
+h3 {
+    font-size: 1.2em;
+    text-align: center;
 }
 
 /* Paragraphs */
@@ -100,9 +101,10 @@ ol  {
 }
 
 li  {
+    font-size: 1.2em;
     font-family: 'Josefin Sans', sans-serif;
     hyphens: none;
-    margin: 20px 5px 20px 5px;
+    margin: 0 10px 0 10px;
 }
 
 li::marker  {
@@ -110,6 +112,11 @@ li::marker  {
 }
 
 .projects {
+    margin-top: 50px;
+}
+
+.about {
+    margin-top: 100px;
 }
 
 /* Gifs */
@@ -133,19 +140,20 @@ video
 
 /* TopImage */
 .topimg {
-    margin: 20px 0 0 0;
+    margin: 30px 0 0 0;
     text-align: center;
     flex: 50%;
 }
 
 
 .bio{
-    margin: 10px 20px 0 20px;
-    text-align: left;
+    margin: 20px 20px 0 20px;
+    text-align: center;
     border: 2px solid #78c2ad;
     border-radius: 12px;
     padding: 10px 20px 0 20px;
-    flex: 50%;
+    justify-self: center;
+    max-width: 500px;
 }
 
 .bannerimg{
@@ -204,23 +212,23 @@ video
 
 /* Card listing */
 .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
-    column-gap: 12rem;
-    row-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 6rem;
+    row-gap: 50px;
     padding: 0;
     margin: 10px;
 }
 
 .link-minicard-grid {
-    display: grid;
-    /*grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));*/
-    grid-template-columns: repeat(auto-fit, minmax(31ch, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     column-gap: 0.5rem;
     row-gap: 0;
     padding: 0;
-    margin: 20px;
-    align-content: space-evenly;
+    margin: 10px;
 }
 
 .intro {
@@ -247,7 +255,6 @@ html.light {
 }
 
 small.subtitle {
-    background-color: #584966;
     color: #fdebf3;
     border-radius: 6px;
     font-family: 'Josefin Sans', sans-serif;
@@ -264,7 +271,7 @@ small.tag {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     padding: 0.3em 0.4em 0.2em 0.6em;
-    margin: 0 3px 0 3px;
+    margin: 0 6px 0 6px;
 }
 
 small.big-tag {
@@ -320,26 +327,7 @@ html::-webkit-scrollbar-track {
 
 .social {
     text-align: center;
-    margin: 5px;
-}
-
-.cool-things-h2 {
-    text-align: center;
-    text-decoration: underline #375a7f;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 6px;
-    font-size: 2.4em;
-    margin-bottom: 0;
-}
-
-.cool-things-h3 {
-    text-decoration: underline #375a7f;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 6px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2.4em;
-    margin-bottom: 0;
-    line-height: 120%;
+    margin: 40px 0 0px 0;
 }
 
 .itchio-card
@@ -390,14 +378,14 @@ button {
         margin: 15px 15px 15px 15px;
     }
 
-    .bio{
+    /*.bio{
         margin: 10px 20px 0 20px;
         text-align: left;
         font-size: 1.0em;
         border: 0px solid #78c2ad;
         border-radius: 12px;
         padding: 0;
-    }
+    }*/
     
     .link-images img {
         height: 30px;
