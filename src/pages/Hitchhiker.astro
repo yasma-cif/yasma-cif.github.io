@@ -3,33 +3,51 @@ import Modal from "../components/Modal.astro";
 ---
 <Modal modal_id="hitchhiker">
     <main slot="main">
+
+        <h1>The Vanishing Hitchhiker</h1>
+
+        <div style="margin: -20px 0 30px 5px; line-height: 175%;">
+            <small class="tag" style="background-color: rgba(255,96,66,0.57); white-space: nowrap; margin: 0">Visual Novel </small>
+            &nbsp;
+            <small class="tag" style="background-color: rgba(255,79,247,0.57); white-space: nowrap; margin: 0">Nintendo Switch </small>
+            &nbsp;
+            <small class="tag" style="background-color: rgba(111,239,88,0.57); white-space: nowrap; margin: 0">Released </small>
+            &nbsp;
+        </div>
+
         <div class="bannervideo">
             <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
                 <source src="/hitchhiker/videos/hitchhiker_banner.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        <br>
-        <h1>The Vanishing Hitchhiker</h1>
 
-        <div style="margin: 10px 0 20px 0; line-height: 175%;">
-            <small class="tag" style="background-color: rgba(255,96,66,0.57)">Visual Novel </small>
-            <small class="tag" style="background-color: rgba(255,79,247,0.57)">Nintendo Switch </small>
-            <small class="tag" style="background-color: rgba(111,239,88,0.57)">Released </small>
+        <ol style="margin: 30px 2% 30px 2%; padding-right: 10px; font-size: 1.1em">
+            <p>
+                The Vanishing Hitchhiker is a short visual novel for the Nintendo Switch with multiple story paths and endings; and spooky girls.
+            </p>
+        </ol>
+        <ul>
+            <li class="game-feature-list" style="list-style-type: '🗺️ ';">
+                The game features multiple choices during the story. These different paths are interconected, resulting in 5 possible endings.
+            </li>
+            <li class="game-feature-list" style="list-style-type: '⌨️ ';">
+                I created a custom markup language to handle the game's events and branching paths.
+            </li>
+            <li class="game-feature-list" style="list-style-type: '🎮 ';">
+                The game was released for the Nintendo Switch, and I implemented the Nintendo SDK.
+            </li>
+
+        </ul>
+
+        <hr style="border: 1.5px solid #78c2ad; margin-top: 40px">
+
+        <div class="button" style="margin: 30px 0 10px 0; line-height: 350%">
+            <a href="https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/The-Vanishing-Hitchhiker-2293699.html" target="_blank" rel="noopener noreferrer"
+               style="margin: 10px;">
+                <button class="eshop-button"><nobr><img width="auto" height="28" alt="eshop_logo" style="outline: 0; transform: translateY(17%);" src="/stores/eshop.png"/>&nbsp Nintendo eShop</nobr></button>
+            </a>
         </div>
-
-        <p>
-            The Vanishing Hitchhiker is a small visual novel for the Nintendo Switch.
-        </p>
-        <p>
-            The game features multiple choices during the story. These different paths are interconected, resulting in 5 possible endings to the game. 
-        </p>
-        <p>
-            I developed my own markup language to handle the game's events and branching paths. Similar to XML but more minimalistic; I implemented a large number of tags that allowed easily managing elements such as font size, text speed, music and sounds and particle effects.
-        </p>
-        <p>
-            As the game was released for the Nintendo Switch, I also implemented the Nintendo SDKs needed for the game's features to work properly.
-        </p>
 
     </main>
 </Modal>

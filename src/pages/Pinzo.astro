@@ -3,62 +3,49 @@ import Modal from "../components/Modal.astro";
 ---
 <Modal modal_id="pinzo">
     <main slot="main">
+
+        <h1>Pinzo's Smoothie Stand</h1>
+
+        <div style="margin: -20px 0 30px 5px; line-height: 175%;">
+            <small class="tag" style="background-color: rgba(255,96,66,0.57); white-space: nowrap; margin: 0">Puzzle </small>
+            &nbsp;
+            <small class="tag" style="background-color: rgba(255,79,247,0.57); white-space: nowrap; margin: 0">PC </small>
+            &nbsp;
+            <small class="tag" style="background-color: rgba(111,239,88,0.57); white-space: nowrap; margin: 0">In Development </small>
+            &nbsp;
+        </div>
+
         <div class="bannervideo">
             <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
                 <source src="/pinzo/videos/pinzo_banner.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        <br>
-        <h1>Pinzo's Smoothie Stand</h1>
 
-        <div style="margin: 10px 0 20px 0; line-height: 175%;">
-            <small class="tag" style="background-color: rgba(255,96,66,0.57)">Puzzle </small>
-            <small class="tag" style="background-color: rgba(255,79,247,0.57)">PC </small>
-            <small class="tag" style="background-color: rgba(111,239,88,0.57)">In Development </small>
-        </div>
+        <ol style="margin: 30px 2% 30px 2%; padding-right: 10px; font-size: 1.1em">
+            <p>
+                Pinzo's Smoothie Stand is my own personal project, currently in development. It's a narrative puzzle game with a chill story and fruit-rolling mechanics.
+            </p>
+        </ol>
+        <ul>
+            <li class="game-feature-list" style="list-style-type: '🦀 ';">
+                Pinzo the crab makes smoothies for his clients, but also helps them with their problems along the way!
+            </li>
+            <li class="game-feature-list" style="list-style-type: '🧩 ';">
+                In the game's puzzles, Pinzo has to roll fruits from the beach to his stand under a number of turns, avoiding obstacles and the ever threatening tide.
+            </li>
+            <li class="game-feature-list" style="list-style-type: '🎨 ';">
+                The game features a cool 2.5D artstyle, with cut-out characters on a 3D world.
+            </li>
+            <li class="game-feature-list" style="list-style-type: '🖥️ ';">
+                I'm working as a solo developer, with some help for character sprites and models.
+            </li>
 
-        <p>
-            Pinzo's Smoothie Stand is my own personal project, currently in development.
-        </p>
-        <p>
-            This is a narrative puzzle game, with fruit-rolling gameplay. pinzo has a limited number of movements to get the fruit to the exit before the tide gets too high and swallows him whole. In the meantime, he will be chatting with his troubled customers on the phone, cheering them on.
-        </p>
-        <p>
-            Aside from the 2D and 3D art I am developing everything all by myself, which has lead me to learn things such as how to generate and solve a puzzle level, how to create complex sand shaders or how 2.5D sprite lightning works.
-        </p>
-        <p>
-            <i>Notice: This game is in development. Assets shown in footage may not be final.</i>
-        </p>
+        </ul>
 
-        <h2 class="cool-things-h2">Cool things I did</h2>
+        <hr style="border: 1.5px solid #78c2ad; margin-top: 30px">
 
-        <div>
-            <h3 class="cool-things-h3">Puzzle level generation in Editor</h3>
-
-            <div class="cool-things">
-                <div class="column">
-                    <p>
-                        I have created a fully fledged puzzle grid editor to facilitate designing and testing levels.
-                    </p>
-                    <p>
-                        You can change the grid size, add and move elements. All in the same place, and with a visual interface.
-                    </p>
-                    <p>
-                        I also developed a puzzle generator using a depth-first search algorithm. The game will feature tailor-made levels, but this tool greatly enhances puzzle designing and testing.
-                    </p>
-                    <p>
-                        You may generate a puzzle from scratch, or try to solve an already existing one. The algorithm will give you the final puzzle and the steps needed to get to the exit.
-                    </p>
-                </div>
-                <div class="column">
-                    <video class="col-video" width="100%" height="auto" controls autoplay muted loop preload="none">
-                        <source src="/pinzo/videos/pinzo_editor.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </div>
+        <h2>Coming soon...</h2>
         
     </main>
 </Modal>

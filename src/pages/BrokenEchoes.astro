@@ -3,126 +3,59 @@ import Modal from "../components/Modal.astro";
 ---
 <Modal modal_id="brokenechoes">
     <main slot="main">
+
+        <h1>Broken Echoes</h1>
+
+        <div style="margin: -20px 0 30px 5px; line-height: 175%;">
+            <small class="tag" style="background-color: rgba(255,96,66,0.57); white-space: nowrap; margin: 0">Action/Adventure </small>
+            &nbsp;
+            <small class="tag" style="background-color: rgba(255,79,247,0.57); white-space: nowrap; margin: 0">PC </small>
+            &nbsp;
+            <small class="tag" style="background-color: rgba(111,239,88,0.57); white-space: nowrap; margin: 0">Master's </small>
+            &nbsp;
+        </div>
+
         <div class="bannervideo">
             <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
                 <source src="/brokenechoes/videos/brokenechoes_banner.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        <br>
-        <h1>Broken Echoes</h1>
 
-        <div style="margin: 10px 0 20px 0; line-height: 175%;">
-            <small class="tag" style="background-color: rgba(255,96,66,0.57)">Action/Adventure </small>
-            <small class="tag" style="background-color: rgba(255,79,247,0.57)">PC </small>
-            <small class="tag" style="background-color: rgba(111,239,88,0.57)">Final Project </small>
+        <ol style="margin: 30px 2% 30px 2%; padding-right: 10px; font-size: 1.1em">
+            <p>
+                Broken Echoes was my Master's final project. It's an action/adventure game with different combat classes, exploration and motion captured cinematics.
+            </p>
+        </ol>
+        <ul>
+            <li class="game-feature-list" style="list-style-type: '🧑‍🤝‍🧑 ';">
+                Our team was comprised of 6 people, and it took us almost a full year to develop.
+            </li>
+            <li class="game-feature-list" style="list-style-type: '🖥️ ';">
+                My main roles were as an Audio Programmer, UI Programmer and Music Composer.
+            </li>
+            <li class="game-feature-list" style="list-style-type: '🎧 ';">
+                I used FMOD Studio to implement dynamic sound effects and ambience, adaptive music and 3D audio.
+            </li>
+            <li class="game-feature-list" style="list-style-type: '🎵 ';">
+                Yes I composed the music too! Here's "The Broken Continuum", the battle theme.
+                <br>
+                <audio style="margin-top: 20px" controls>
+                    <source src="/brokenechoes/audio/be_demo2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </li>
+
+        </ul>
+
+        <hr style="border: 1.5px solid #78c2ad; margin-top: 40px">
+
+        <div class="button" style="margin: 30px 0 10px 0; line-height: 350%">
+            <a href="https://ad-astra-studios.itch.io/broken-echoes" target="_blank" rel="noopener noreferrer"
+               style="margin: 10px;">
+                <button class="itchio-button"><nobr><img width="auto" height="28" alt="itchio_logo" style="outline: 0; transform: translateY(17%);" src="/stores/itchio.png"/>&nbsp itch.io</nobr></button>
+            </a>
         </div>
-
-        <p>
-            Broken Echoes was my Master's final project. I developed it alongside 5 other colleages.
-        </p>
-        <p>
-            As we were given the chance to create this project for a full year, our goal was to be as ambitious as possible. The game has action combat, different combat classes and attacks, exploration and motion captured cinematics.
-        </p>
-        <p>
-            My role in the project was as an audio programmer and designer, music composer, and backup programmer whenever needed.
-        </p>
-        <p>
-            The game is available for free <a href="https://ad-astra-studios.itch.io/broken-echoes" target="_blank" rel="noopener noreferrer" style="color: #fdebf3">in itch.io</a>!
-        </p>
-
-        <h2 class="cool-things-h2">Cool things I did</h2>
-
-        <div>
-            <h3 class="cool-things-h3">Soundscape</h3>
-
-            <div class="cool-things">
-                <div class="column">
-                    <p>
-                        I took advantage of FMOD Studio's tools to make the game's ambient sound as immersive as possible.
-                    </p>
-                    <p>
-                        Each zone has a unique dynamic ambience composed of different layers. The beach's soundscape, for example, is formed by the sound of the waves, the wind, and randomized seagull calls.
-                    </p>
-                    <p>
-                        Sounds that take place in a specific 3D location, like the waves crashing, use FMOD's 3D audio capabilities to vary in intensity depending on the camera's position and distance.
-                    </p>
-                    <p>
-                        Some sound effects, like Lea's footsteps, also vary depending on the terrain.
-                    </p>
-                </div>
-                <div class="column">
-                    <video class="col-video" width="100%" height="auto" controls autoplay muted loop preload="none">
-                        <source src="/brokenechoes/videos/brokenechoes_soundscape.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <h3 class="cool-things-h3">Music composition</h3>
-
-            <div class="cool-things">
-                <div class="column">
-                    <p>
-                        I was the sole composer of Broken Echoes' soundtrack, formed by 9 songs + variations.
-                    </p>
-                    <p>
-                        I leaned on the use of leitmotifs and character specific instruments to enrich the game's songs. Lea, her mother, and the final boss all have their own motifs.
-                    </p>
-                    <p>
-                        Most of the songs use classical instruments to depict the natural world; and the combat theme and the final boss' theme use synths and electric guitars representing the spacetime corruptions.
-                    </p>
-                    <p>
-                        Here are 3 song snippets as a sample.
-                    </p>
-                </div>
-                <div class="column" style="text-align: center">
-                    <h3 style="font-family: 'Josefin Sans', sans-serif;">Rise and Fall (Bridge Climbing)</h3>
-                    <audio controls>
-                        <source src="/brokenechoes/audio/be_demo1.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <h3 style="font-family: 'Josefin Sans', sans-serif;">The Broken Continuum (Battle Theme)</h3>
-                    <audio controls>
-                        <source src="/brokenechoes/audio/be_demo2.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <h3 style="font-family: 'Josefin Sans', sans-serif;">Master of Sapience 2 (Final Boss Phase 2)</h3>
-                    <audio controls>
-                        <source src="/brokenechoes/audio/be_demo3.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <h3 class="cool-things-h3">Sound effects</h3>
-
-            <div class="cool-things">
-                <div class="column">
-                    <p>
-                        Broken Echoes' sound effects bring out the contrast between the natural and the corrupted world.
-                    </p>
-                    <p>
-                        The world and the environments produce more realistic and grounded sound effects, while corrupted elements like Lea's sword and the enemies emit otherworldly sounds.
-                    </p>
-                    <p>
-                        This video contains a combat scene without music, so the sound effects are easier to hear.
-                    </p>
-                    <p>
-                        <i>Fun fact</i>: The game's enemies are corrupted humans, so I wanted them to make animalistic and gutural grunts. Bipedal enemies use Iberian lynx cries as a base, and flying enemies always sound like they are laughing; these are frog calls backwards.
-                    </p>
-                </div>
-                <div class="column">
-                    <video class="col-video" width="100%" height="auto" controls autoplay muted loop preload="none">
-                        <source src="/brokenechoes/videos/brokenechoes_sfx.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </div>
+        
     </main>
 </Modal>

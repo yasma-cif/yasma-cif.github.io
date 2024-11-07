@@ -3,131 +3,64 @@ import Modal from "../components/Modal.astro";
 ---
 <Modal modal_id="danievan">
     <main slot="main">
+        
+        <h1>Dani & Evan: Dinosaur Books</h1>
+
+        <div style="margin: -20px 0 30px 5px; line-height: 175%;">
+            <small class="tag" style="background-color: rgba(255,96,66,0.57); white-space: nowrap; margin: 0">Visual Novel </small>
+            &nbsp;
+            <small class="tag" style="background-color: rgba(255,79,247,0.57); white-space: nowrap; margin: 0">Mobile </small>
+            &nbsp;
+            <small class="tag" style="background-color: rgba(255,79,247,0.57); white-space: nowrap; margin: 0">Nintendo Switch </small>
+            &nbsp;
+            <small class="tag" style="background-color: rgba(111,239,88,0.57); white-space: nowrap; margin: 0">Released </small>
+            &nbsp;
+        </div>
+
         <div class="bannervideo">
             <video style="border-radius: 12px" width="100%" height="auto" controls autoplay muted loop preload="none">
                 <source src="/danievan/videos/danievan_banner.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        <br>
-        <h1>Dani & Evan: Dinosaur Books</h1>
 
-        <div style="margin: 10px 0 20px 0; line-height: 175%;">
-            <small class="tag" style="background-color: rgba(255,96,66,0.57)">Visual Novel </small>
-            <small class="tag" style="background-color: rgba(255,79,247,0.57)">Mobile </small>
-            <small class="tag" style="background-color: rgba(255,79,247,0.57)">Nintendo Switch </small>
-            <small class="tag" style="background-color: rgba(111,239,88,0.57)">Released </small>
+        <ol style="margin: 30px 2% 30px 2%; padding-right: 10px; font-size: 1.1em">
+            <p>
+                Dani & Evan: Dinosaur Books is an interactive visual novel based on the book "The Adventures of Dani and Evan".
+            </p>
+        </ol>
+        <ul>
+            <li class="game-feature-list" style="list-style-type: '🌍 ';">
+                The game was developed in collaboration with the book publisher "Grupo Planeta".
+            </li>
+            <li class="game-feature-list" style="list-style-type: '📚 ';">
+                It adapts the book's story, and includes environment exploration, minigames and collectables.
+            </li>
+            <li class="game-feature-list" style="list-style-type: '🖥️ ';">
+                I worked as the programmer and designer of the game, but also did animations, writing and sound design.
+            </li>
+            <li class="game-feature-list" style="list-style-type: '📚 ';">
+                Some of the challenges during development were the Japanese localization, the creation of a modular chapter system and the port to Nintendo Switch.
+            </li>
+            
+        </ul>
+
+        <hr style="border: 1.5px solid #78c2ad; margin-top: 30px">
+        
+        <div class="button" style="margin: 30px 0 10px 0; line-height: 350%">
+            <a href="https://play.google.com/store/apps/details?id=com.cookingandpublishing.daniandevan&hl=en" target="_blank" rel="noopener noreferrer"
+               style="margin: 10px;">
+                <button class="playstore-button"><nobr><img width="auto" height="28" alt="playstore_logo" style="outline: 0; transform: translateY(17%);" src="/stores/playstore.png"/>&nbsp Play Store</nobr></button>
+            </a>
+            <a href="https://apps.apple.com/us/app/dani-and-evan-dinosaur-books/id6449602220" target="_blank" rel="noopener noreferrer"
+               style="margin: 10px;">
+                <button class="appstore-button"><nobr><img width="auto" height="28" alt="appstore_logo" style="outline: 0; transform: translateY(17%);" src="/stores/appstore.png"/>&nbsp App Store</nobr></button>
+            </a>
+            <a href="https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Dani-and-Evan-Dinosaur-books-2498006.html" target="_blank" rel="noopener noreferrer"
+               style="margin: 10px;">
+                <button class="eshop-button"><nobr><img width="auto" height="28" alt="eshop_logo" style="outline: 0; transform: translateY(17%);" src="/stores/eshop.png"/>&nbsp Nintendo eShop</nobr></button>
+            </a>
         </div>
-
-        <p>
-            Dani & Evan: Dinosaur Books is an interactive book/visual novel based on book 1 of the series "The Adventures of Dani and Evan". It was developed in collaboration with the book publisher "Grupo Planeta".
-        </p>
-        <p>
-            The game aims to encourage young kids to read by including exploration segments, minigames and collectables; in what the game calls "the Explorer's Notebook".
-        </p>
-        <p>
-            I worked as the official programmer and designer of the game, but also as the unofficial animator, writer and sound designer.
-        </p>
-
-        <h2 class="cool-things-h2">Cool things I did</h2>
-
-        <div>
-            <h3 class="cool-things-h3">Japanese translation</h3>
-
-            <div class="cool-things">
-                <div class="column">
-                    <p>
-                        The game was translated to <nobr>8 languages</nobr> including Japanese and Russian, providing a fair share of challenges during development.
-                    </p>
-                    <p>
-                        The main one was how to change every font in the game during runtime to allow for non-latin characters without breaking everything.
-                    </p>
-                    <p>
-                        I solved the issue by developing a custom wrapper over the dialogue system and the Unity TMP component that allowed changing stylesheets seamlessly while ensuring every formatting still worked as intended.
-                    </p>
-                </div>
-                <div class="column">
-                    <video class="col-video"  width="100%" height="auto" controls autoplay muted loop preload="none">
-                        <source src="/danievan/videos/danievan_jap.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <h3 class="cool-things-h3">Modular chapter system</h3>
-
-            <div class="cool-things">
-                <div class="column">
-                    <p>
-                        I build the game's chapter system to be reusable and easy to extend.
-                    </p>
-                    <p>
-                        Everything runs in the same scene and is controlled by ScriptableObjects. Adding a new chapter or section is as easy as adding a new element to the list.
-                    </p>
-                </div>
-                <div class="column">
-                    <video class="col-video"  width="100%" height="auto" controls autoplay muted loop preload="none">
-                        <source src="/danievan/videos/danievan_chapters.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <h3 class="cool-things-h3">Book to game adaptation</h3>
-
-            <div class="cool-things">
-                <div class="column">
-                    <p>
-                        The game's story was based on the book, but it needed to be adapted to the gameplay.
-                    </p>
-                    <p>
-                        I adapted the book's texts to the game, and wrote and designed the exploration segments as natural extensions to the original story.
-                    </p>
-                    <p>
-                        I also wrote the Explorer's Notebook (the unlockables section) and the game's quizzes.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <h3 class="cool-things-h3">Leaf touch particles</h3>
-
-            <div class="cool-things">
-                <div class="column">
-                    <p>
-                        These are particles that show up when touching the screen, making for a fun visual indicator that you can mess around with.
-                    </p>
-                    <p>
-                        They leave a trail of leaves and track up to 10 fingers at the same time.
-                    </p>
-                </div>
-                <div class="column">
-                    <video class="col-video"  width="100%" height="auto" controls autoplay muted loop preload="none">
-                        <source src="/danievan/videos/danievan_touch.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <h3 class="cool-things-h3">Nintendo Switch version</h3>
-
-            <div class="cool-things">
-                <div class="column">
-                    <p>
-                        I implemented all the Nintendo SDKs needed to adapt input, saves, resolution, etc. to the Nintendo Switch.
-                    </p>
-                    <p>
-                        It was important to keep a no hassle control scheme, so I updated the game's input system to change seamlessly between controller and touch input (and mouse too because why not).
-                    </p>
-                </div>
-            </div>
-        </div>
+        
     </main>
 </Modal>

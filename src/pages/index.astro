@@ -11,6 +11,7 @@ import Hitchhiker from "./Hitchhiker.astro";
 import Pinzo from "./Pinzo.astro";
 
 import Minicard from "../components/Minicard.astro";
+import RandomFact from '../components/RandomFact';
 
 const pageTitle = "Ismael Moyano";
 
@@ -52,7 +53,7 @@ const pageTitle = "Ismael Moyano";
     
     <div id="intro" class="intro">
         <div class="topimg">
-            <h1>Ismael Moyano</h1>
+            <h1 style="font-size: 3em; margin: 20px 0 20px 0;">Ismael Moyano</h1>
 
             <small class="subtitle" style="background-color: #4d8878">Game Developer</small>
             
@@ -64,28 +65,43 @@ const pageTitle = "Ismael Moyano";
                 <p>
                     ✨ <b>Hi! I'm Ismael and I like to create <nobr>cool games.</nobr></b>
                 </p>
+                <p>
+                    📚 These are my past projects.
+                </p>
+                <p>
+                    ✉️ Feel free to get in touch!
+                </p>
+                <!--<ul>
+                    <li class="bio-list" style="list-style-type: '✨ ';">
+                        <b>Hi! I'm Ismael and I like to create <nobr>cool games.</nobr></b>
+                    </li>
+                    <li class="bio-list" style="list-style-type: '✨ ';">
+                        These are my past projects.
+                    </li>
+                    <li class="bio-list" style="list-style-type: '✨ ';">
+                        Feel free to get in touch!
+                    </li>
+                    
+                </ul>-->
             </div>
             
             <!--<div style="font-size: 0.6rem; text-align: center; margin-bottom: 10px; margin-top: 30px"><h1>Find me in: </h1></div>-->
 
             <p class="social">
-                <!--<a href="https://twitter.com/leamsy_azurae" target="_blank" rel="noopener noreferrer">
-                    <img width="auto" height="32" alt="Twitter" style="outline: 0;" src="/twitter_logo.png"/>
-                </a>-->
                 <a href="https://www.linkedin.com/in/leamsy/" target="_blank" rel="noopener noreferrer">
-                    <img width="auto" height="35" alt="LinkedIn" style="outline: 0;" src="/linkedin_logo.png"/>
+                    <img width="auto" height="40" alt="LinkedIn" style="outline: 0;" src="/linkedin_logo.png"/>
                 </a>
                 <a href="https://leamsy.itch.io/" target="_blank" rel="noopener noreferrer">
-                    <img width="auto" height="35" alt="itch.io" style="outline: 0;" src="/itchio_logo.png"/>
+                    <img width="auto" height="40" alt="itch.io" style="outline: 0;" src="/itchio_logo.png"/>
                 </a>
                 <a href="mailto:leamsy.azurae@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <img width="auto" height="35" alt="Mail" style="outline: 0;" src="/mail_logo.png"/>
+                    <img width="auto" height="40" alt="Mail" style="outline: 0;" src="/mail_logo.png"/>
                 </a>
             </p>
             <br>
             <div class="button">
                 <a href="https://drive.google.com/file/d/1FdlfS_V0wRnthGfFefx1auf_w08YDLtr/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                    <button>My resume</button>
+                    <button class="resume-button">My resume</button>
                 </a>
             </div>
             <br>
@@ -126,11 +142,13 @@ const pageTitle = "Ismael Moyano";
                     card_id="bodycombat"
                     image="/bodycombat/bodycombat.png"
                     title="Les Mills Bodycombat"
-                    body="An intense fitness game where the coaches will make you sweat!"
+                    body="An intense VR fitness game with challenging stages. The coaches will make you sweat!"
             >
                 <small class="tag" style="background-color: rgba(255,96,66,0.57)">Fitness </small>
+                &nbsp;
                 <small class="tag" style="background-color: rgba(255,79,247,0.57)">VR </small>
-                <small class="tag" style="background-color: rgba(111,239,88,0.57)">Live Game </small>
+                &nbsp;
+                <small class="tag" style="background-color: rgba(111,239,88,0.57)">Live Service </small>
 
             </Card>
             <Card
@@ -140,8 +158,11 @@ const pageTitle = "Ismael Moyano";
                     body="A dinotastic interactive book, with exploration, minigames and collectables."
             >
                 <small class="tag" style="background-color: rgba(255,96,66,0.57)">Visual Novel </small>
+                &nbsp;
                 <small class="tag" style="background-color: rgba(255,79,247,0.57)">Mobile </small>
+                &nbsp;
                 <small class="tag" style="background-color: rgba(255,79,247,0.57)">Nintendo Switch </small>
+                &nbsp;
                 <small class="tag" style="background-color: rgba(111,239,88,0.57)">Released </small>
 
             </Card>
@@ -153,8 +174,10 @@ const pageTitle = "Ismael Moyano";
             >
 
                 <small class="tag" style="background-color: rgba(255,96,66,0.57)">Action/Adventure </small>
+                &nbsp;
                 <small class="tag" style="background-color: rgba(255,79,247,0.57)">PC </small>
-                <small class="tag" style="background-color: rgba(111,239,88,0.57)">Final Project </small>
+                &nbsp;
+                <small class="tag" style="background-color: rgba(111,239,88,0.57)">Master's </small>
 
             </Card>
             <Card
@@ -165,7 +188,9 @@ const pageTitle = "Ismael Moyano";
             >
 
                 <small class="tag" style="background-color: rgba(255,96,66,0.57)">Visual Novel </small>
+                &nbsp;
                 <small class="tag" style="background-color: rgba(255,79,247,0.57)">Nintendo Switch </small>
+                &nbsp;
                 <small class="tag" style="background-color: rgba(111,239,88,0.57)">Released </small>
 
             </Card>
@@ -173,17 +198,19 @@ const pageTitle = "Ismael Moyano";
                     card_id="pinzo"
                     image="/pinzo/pinzo.png"
                     title="Pinzo's Smoothie Stand"
-                    body="A narrative puzzle game with 2.5D graphics, smoothies and talking seafood."
+                    body="A narrative puzzle game with 2.5D graphics, smoothies and talking sea creatures."
             >
 
                 <small class="tag" style="background-color: rgba(255,96,66,0.57)">Puzzle </small>
+                &nbsp;
                 <small class="tag" style="background-color: rgba(255,79,247,0.57)">PC </small>
+                &nbsp;
                 <small class="tag" style="background-color: rgba(111,239,88,0.57)">In Development </small>
 
             </Card>
         </div>
 
-        <div style="margin-top: 80px; text-align: center;">
+        <div style="margin-top: 100px; text-align: center;">
             <!--<p class="check-itchio">
                 Feel free to check out <a href="https://leamsy.itch.io/" target="_blank" rel="noopener noreferrer" style="color: #fdebf3">my itch.io</a> games too!
             </p>
@@ -262,54 +289,26 @@ const pageTitle = "Ismael Moyano";
         </div>
     </div>-->
 
-    <div id="about" class="about">
+    <div class="about">
         <h3 style="margin-bottom: -10px">But just who is this Ismael fellow?</h3>
-        <h2>Here are 10 random facts about me!</h2>
+        <h2>✨ Here's a random fact about me! ✨</h2>
+
+        <RandomFact client:load messages={[
+            "My first game development engine was GameMaker. My second was Wario Ware: DIY.",
+            "I'm always in some sort of idle dance, Cuphead-style.",
+            "Someone threw a duck over our fence once, so we adopted it for a couple of months. Its name was Colorines.",
+            "I can't stand wedge cheese.",
+            "Two of my favorite game franchises are Dark Souls and Kirby. Opposites touch.",
+            "People say I have the softest cheeks they have ever seen. I agree.",
+            "I use bananas way too much as an ingredient when cooking.",
+            "Some of my favorite Pokémon are Porygon2, Rotom and Whimsicott.",
+            "Approximately 90% of my daily music listening is comprised of game soundtracks.",
+            "My nickname \"Leamsy\" comes from the greek word \"Leamsis\", meaning lighthouse.",
+        ]} />
         
-        <ol style="margin: 20px 12% 0 12%; padding-top: 20px; padding-bottom: 20px">
-            <li>
-                My first game development engine was GameMaker. My second was <nobr>Wario Ware: DIY</nobr>.
-            </li>
-            <br>
-            <li>
-                I'm always in some sort of idle dance, Cuphead-style.
-            </li>
-            <br>
-            <li>
-                Someone threw a duck over our fence once, so we adopted it for a couple of months. Its name was "Colorines".
-            </li>
-            <br>
-            <li>
-                I can't stand wedge cheese.
-            </li>
-            <br>
-            <li>
-                Two of my favorite game franchises are Dark Souls and Kirby. Opposites touch.
-            </li>
-            <br>
-            <li>
-                People say I have the softest cheeks they have ever seen. I agree.
-            </li>
-            <br>
-            <li>
-                I use bananas way too much as an ingredient when cooking.
-            </li>
-            <br>
-            <li>
-                Some of my favorite Pokémon are Porygon2, Rotom and Whimsicott.
-            </li>
-            <br>
-            <li>
-                Approximately 90% of my daily music listening is comprised of game soundtracks.
-            </li>
-            <br>
-            <li>
-                My pen name "Leamsy" comes from the greek word "Leamsis", meaning lighthouse.
-            </li>
-        </ol>
     </div>
 
-    <!--<Bodycombat/>-->
+    <Bodycombat/>
     
     <DaniEvan/>
 

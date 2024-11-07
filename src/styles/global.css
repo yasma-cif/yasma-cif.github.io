@@ -52,7 +52,7 @@ html {
 body {
     max-width: 1850px;
     margin: 0 auto;
-    font-size: 1.4em;
+    font-size: 1.5rem;
 }
 
 /* Headings */
@@ -63,20 +63,16 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3em;
-    margin: 20px 0 20px 0;
+    font-size: 2em;
 }
 
 h2 {
-    /*text-decoration: underline #375a7f;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 6px;*/
-    font-size: 2em;
+    font-size: 1.6em;
     text-align: center;
 }
 
 h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: center;
 }
 
@@ -100,13 +96,6 @@ ol  {
     border-radius: 12px;
 }
 
-li  {
-    font-size: 1.2em;
-    font-family: 'Josefin Sans', sans-serif;
-    hyphens: none;
-    margin: 0 10px 0 10px;
-}
-
 li::marker  {
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -116,7 +105,7 @@ li::marker  {
 }
 
 .about {
-    margin-top: 100px;
+    margin: 100px 16% 0 16%;
 }
 
 /* Gifs */
@@ -148,12 +137,31 @@ video
 
 .bio{
     margin: 20px 20px 0 20px;
-    text-align: center;
+    text-align: left;
     border: 2px solid #78c2ad;
     border-radius: 12px;
     padding: 10px 20px 0 20px;
     justify-self: center;
-    max-width: 500px;
+    max-width: 700px;
+}
+
+.bio-list{
+    margin: 20px 0 20px 0;
+    list-style-position: outside;
+    font-family: 'Josefin Sans', sans-serif;
+    hyphens: none;
+    left: -10px;
+    line-height: 1.5;
+}
+
+.human-facts{
+    margin: 20px 10px 0 10px;
+    text-align: center;
+    border: 2px solid #78c2ad;
+    border-radius: 12px;
+    padding: 10px 24px 0 24px;
+    justify-self: center;
+    max-width: 700px;
 }
 
 .bannerimg{
@@ -176,9 +184,27 @@ video
     border-radius: 16px;
     text-align: center;
 }
+
 .bannervideo video{
     width: 100%;
-    margin: -15% 0 -15% 0;
+    margin: -16% 0 -16% 0;
+}
+
+.human-list  {
+    font-size: 1em;
+    font-family: 'Josefin Sans', sans-serif;
+    hyphens: none;
+    margin: 0 10px 0 10px;
+}
+
+.game-feature-list{
+    margin: 10px 15% 10px 15%;
+    list-style-position: outside;
+    font-family: 'Josefin Sans', sans-serif;
+    hyphens: none;
+    position: relative;
+    left: -10px;
+    line-height: 1.5;
 }
 
 /* Navigation Bar */
@@ -271,7 +297,7 @@ small.tag {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     padding: 0.3em 0.4em 0.2em 0.6em;
-    margin: 0 6px 0 6px;
+    margin: 0 -4px 0 -4px;
 }
 
 small.big-tag {
@@ -283,18 +309,6 @@ small.big-tag {
     font-weight: 600;
     padding: 0.3em 0.4em 0.2em 0.6em;
     margin: 0 5px 0 5px;
-}
-
-
-button:hover {
-    background-color: #375a7f;
-    color: #fdebf3;
-    border-color: #375a7f;
-    cursor: pointer;
-}
-
-.button {
-    text-align: center;
 }
 
 html::-webkit-scrollbar {
@@ -337,13 +351,65 @@ html::-webkit-scrollbar-track {
 
 /* Button */
 button {
-    border: 2px solid #fdebf3;
     border-radius: 8px;
     font: 600 1.4rem 'Josefin Sans', sans-serif;
     padding: 10px 18px;
     transition: background-color 0.4s, color 0.4s, border-color 0.4s;
     background-color: #fdebf3;
+    border: 2px solid #fdebf3;
     color: #000000;
+}
+
+.button {
+    text-align: center;
+}
+
+.resume-button {
+    padding: 14px 30px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #375a7f;
+    color: #fdebf3;
+    border-color: #375a7f;
+    cursor: pointer;
+}
+
+.playstore-button {
+    padding: 6px 18px 10px 18px;
+    background-color: #338460;
+    border: 2px solid #338460;
+    color: #ffffff;
+}
+
+.appstore-button {
+    padding: 6px 18px 10px 18px;
+    background-color: #efefef;
+    border: 2px solid #efefef;
+    color: #000000;
+}
+
+.eshop-button {
+    padding: 6px 18px 10px 18px;
+    background-color: #dd0909;
+    border: 2px solid #dd0909;
+    color: #ffffff;
+}
+
+.itchio-button {
+    padding: 6px 18px 10px 18px;
+    background-color: #f6860e;
+    border: 2px solid #f6860e;
+    color: #ffffff;
+}
+
+.metaquest-button {
+    padding: 6px 18px 10px 18px;
+    background-color: #68b8e1;
+    border: 2px solid #68b8e1;
+    color: #ffffff;
 }
 
 /* Social images */
@@ -377,15 +443,6 @@ button {
     body {
         margin: 15px 15px 15px 15px;
     }
-
-    /*.bio{
-        margin: 10px 20px 0 20px;
-        text-align: left;
-        font-size: 1.0em;
-        border: 0px solid #78c2ad;
-        border-radius: 12px;
-        padding: 0;
-    }*/
     
     .link-images img {
         height: 30px;
@@ -433,5 +490,18 @@ button {
         padding: 15px 15px 15px 15px;
         margin: 0 8% 0 8%;
         font-size: 22px
+    }
+
+    .bannervideo video{
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    .about {
+        margin: 100px 4% 0 4%;
+    }
+
+    .game-feature-list{
+        margin: 20px 0 20px 0;
     }
 }
