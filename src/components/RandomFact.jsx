@@ -25,11 +25,13 @@ export default function RandomFact({messages}) {
 
     return (
         <div style="text-align: center;">
-            <div class="human-facts">
-                <p>
-                    <b>{greeting}</b>
-                </p>
-            </div>
+            <center>
+                <div class="human-facts">
+                    <p>
+                        <b>{greeting}</b>
+                    </p>
+                </div>
+            </center>
             <button class="button" style="margin-top: 30px" onClick={() => setGreeting(randomMessage())}>
                 Re-fact
             </button>
