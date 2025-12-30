@@ -45,7 +45,7 @@ const {modal_id} = Astro.props;
 
 <style lang="scss">
   dialog {
-    width: 80%;
+    width: 50%;
     max-width: 1200px;
     position: fixed;
     opacity: 0;
@@ -88,6 +88,35 @@ const {modal_id} = Astro.props;
     background: linear-gradient(90deg,#434343,#434343 1px,rgba(1, 1, 1, 0.1) 0,rgba(1, 1, 1, 0.1));
     border-radius: 16px;
   }
+
+  /* Media Query */
+    @media only screen and (max-width: 800px) {
+        dialog {
+            width: 80%;
+            max-width: 1200px;
+            position: fixed;
+            opacity: 0;
+            transition: opacity 0.25s;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('/background.png');
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            background-attachment: fixed;
+            border-radius: 16px;
+            color: #fdebf3;
+            border-color: #78c2ad;
+            &::backdrop {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background: rgba(0, 0, 0, 0.35);
+            }
+        }
+    }
   
 </style>
 
