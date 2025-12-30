@@ -284,7 +284,7 @@ small.subtitle {
     color: #fdebf3;
     border-radius: 6px;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
     padding: 0.3em 0.6em 0.2em;
 }
@@ -378,21 +378,21 @@ button:hover {
 }
 
 .playstore-button {
-    padding: 6px 18px 10px 18px;
+    padding: 6px 16px 8px 18px;
     background-color: #338460;
     border: 2px solid #338460;
     color: #ffffff;
 }
 
 .appstore-button {
-    padding: 6px 18px 10px 18px;
+    padding: 6px 16px 8px 18px;
     background-color: #efefef;
     border: 2px solid #efefef;
     color: #000000;
 }
 
 .eshop-button {
-    padding: 6px 18px 10px 18px;
+    padding: 6px 16px 8px 18px;
     background-color: #dd0909;
     border: 2px solid #dd0909;
     color: #ffffff;
@@ -414,7 +414,7 @@ button:hover {
 
 /* Social images */
 .social img {
-    margin: 6px 6px;
+    margin: 8px 8px;
 }
 
 /* Skill images */
@@ -425,6 +425,7 @@ button:hover {
 .round-borders
 {
     border-radius: 50%;
+    margin-top: 40px;
 }
 
 .check-itchio
