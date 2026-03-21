@@ -1,0 +1,205 @@
+:root {
+    --primary-color-1: oklch(55.715% 0.26183 304.98);
+    --primary-color-2: oklch(72.728% 0.22598 341.451);
+    --primary-color-3: oklch(93.288% 0.11083 99.901);
+    --primary-color-4: oklch(93.705% 0.00011 271.152);
+    --primary-color-5: oklch(28.443% 0.01979 264.21);
+
+    --background-color: oklch(from var(--primary-color-5) l c h);
+
+    --background-gradient: linear-gradient(
+        -45deg,
+        oklch(from var(--primary-color-1) calc(l - 0.4) c h),
+        oklch(from var(--primary-color-2) calc(l - 0.4) c h),
+        oklch(from var(--primary-color-3) calc(l - 0.4) c h),
+        oklch(from var(--primary-color-4) calc(l - 0.4) c h)
+    );
+
+    --accents-color: var(--primary-color-1);
+
+    --card-background: oklch(from var(--primary-color-4) calc(l - 0.4) c h / 0.3);
+
+    --card-hover-border: var(--primary-color-2);
+    --card-hover-shadow: oklch(from var(--primary-color-1) l c h / 0.3);
+
+    --modal-background: oklch(from var(--primary-color-5) l c h / 0.3);
+
+    --modal-container-background: rgba(20, 20, 20, 0.4);
+
+    --aurora-overlay-1: oklch(from var(--primary-color-1) l c h / 0.2);
+    --aurora-overlay-2: oklch(from var(--primary-color-2) l c h / 0.2);
+    --aurora-overlay-3: oklch(from var(--primary-color-3) l c h / 0.2);
+    --aurora-overlay-4: oklch(from var(--primary-color-4) l c h / 0.2);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Aurora gradient background */
+.aurora-bg {
+    background: var(--background-color);
+    background-size: 100% 100%;
+}
+
+/* Aurora light effect overlay */
+.aurora-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background:
+        radial-gradient(ellipse at top left, var(--aurora-overlay-2) 0%, transparent 40%),
+        radial-gradient(ellipse at top right, var(--aurora-overlay-3) 0%, transparent 40%),
+        radial-gradient(ellipse at bottom left, var(--aurora-overlay-3) 0%, transparent 40%),
+        radial-gradient(ellipse at bottom right, var(--aurora-overlay-2) 0%, transparent 40%);
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+/* Gradient text */
+.gradient-text {
+    background: linear-gradient(135deg, var(--primary-color-1) 0%, var(--primary-color-2) 50%, var(--primary-color-3) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary-color-5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--primary-color-1), var(--primary-color-2));
+    border-radius: 5px;
+}
+
+/* Card hover effect */
+.card-hover {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.card-hover:hover {
+    border-color: var(--card-hover-border);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px var(--card-hover-shadow);
+}
+
+/* Progress bar animation */
+@keyframes progressAnimation {
+    0% { width: 0%; }
+}
+
+.progress-bar {
+    animation: progressAnimation 2s ease-out forwards;
+}
+
+/* Glass card */
+
+.glass-card {
+    background: var(--card-background);
+}
+
+.glass-card::after {
+    backdrop-filter: blur(60px);
+}
+
+/* Modals */
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--modal-container-background);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-content{
+    position: fixed;
+    border-radius: 1rem;
+    transition: all .3s;
+    background-color: var(--modal-background);
+    box-shadow: 0 10px 30px var(--card-hover-shadow);
+
+    min-width: 430px;
+    width: 50%;
+    max-height: 80%;
+
+    transform: translateY(10%);
+
+    overflow-y: auto;
+}
+
+.show-modal{
+    visibility: visible;
+    opacity: 1;
+}
+
+.show-modal .modal-content{
+    transform: translateY(0%);
+}
+
+/* Video */
+
+.bannervideo{
+    overflow: hidden;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+    border-radius: 16px 16px 0 0;
+}
+
+.bannervideo video{
+    width: 100%;
+    margin: -16% 0 -16% 0;
+}
+
+/* Misc. */
+
+.game-feature-list{
+    margin: 0px 4% 0px 4%;
+    list-style-position: outside;
+    position: relative;
+}
+
+.close-button{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.tag-1{
+    background: oklch(from var(--primary-color-2) l c h / 0.2);
+}
+
+.tag-2{
+    background: oklch(from var(--primary-color-3) l c h / 0.2);
+}
+
+.tag-3{
+    background: oklch(from var(--primary-color-4) l c h / 0.2);
+}

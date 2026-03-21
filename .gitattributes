@@ -1,2 +1,0 @@
-*.mkv filter=lfs diff=lfs merge=lfs -text
-/public/danievan/test.mkv filter=lfs diff=lfs merge=lfs -text
