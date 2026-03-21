@@ -24,7 +24,7 @@
 
     --modal-background: oklch(from var(--primary-color-5) l c h / 0.3);
 
-    --modal-container-background: rgba(20, 20, 20, 0.4);
+    --modal-container-background: rgba(20, 20, 20, 0.6);
 
     --aurora-overlay-1: oklch(from var(--primary-color-1) l c h / 0.2);
     --aurora-overlay-2: oklch(from var(--primary-color-2) l c h / 0.2);
@@ -143,9 +143,11 @@ html {
     border-radius: 1rem;
     transition: all .3s;
     background-color: var(--modal-background);
-    box-shadow: 0 10px 30px var(--card-hover-shadow);
+    box-shadow: 0 10px 30px var(--primary-color-5);
 
-    min-width: 430px;
+    border: 1px solid oklch(from var(--primary-color-4) l c h / 0.2);
+
+    min-width: 340px;
     width: 50%;
     max-height: 80%;
 
