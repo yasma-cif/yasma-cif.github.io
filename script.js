@@ -43,7 +43,7 @@ function refact(){
 
     const facts = [
         "My first game development engine was GameMaker. The second was Wario Ware: DIY.",
-        "I'm always in some sort of idle dance, Cuphead-style.",
+        "I'm always in some sort of idle dance, <nobr>Cuphead-style</nobr>.",
         "Someone abandoned a duck on our yard once, so we adopted it for a year. Its name was Colorines.",
         "I'm a certified wedge cheese hater.",
         "Two of my favorite game franchises are Dark Souls and Kirby. Maybe opposites attract?",
