@@ -19,6 +19,7 @@ const showModal = (openButton, modalContent) =>{
     }
 }
 
+showModal('togeemu-modal-button','togeemu-modal')
 showModal('bodycombat-modal-button','bodycombat-modal')
 showModal('danievan-modal-button','danievan-modal')
 showModal('brokenechoes-modal-button','brokenechoes-modal')

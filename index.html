@@ -234,6 +234,30 @@
 
             <!-- Large projects -->
             <div class="pb-8 flex flex-wrap justify-center gap-8">
+                <!-- Togeemu -->
+                <div class="max-w-sm glass-card rounded-lg overflow-hidden card-hover group cursor-pointer" id="togeemu-modal-button">
+                    <div class="bg-gradient-to-br from-primary-color-1 to-primary-color-2 flex items-center justify-center">
+                        <img src="media/togeemu/togeemu.png">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Project Togeemu</h3>
+                        <p class="text-gray-400 mb-4">A 10 minigame, WarioWare-inspired collection!</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 tag-3 rounded text-xs">
+                                <img class="w-4 float-right" src="media/stores/steam.png">
+                            </span>
+                            <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Godot</span>
+                            <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Minigames</span>
+                        </div>
+                        <div class="flex items-center">
+                            <a href="#" class="text-gray-400">
+                                <i class="fa-regular fa-hand-pointer"></i> Click to learn more!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
                 <!-- Bodycombat -->
                 <div class="max-w-sm glass-card rounded-lg overflow-hidden card-hover group cursor-pointer" id="bodycombat-modal-button">
                     <div class="bg-gradient-to-br from-primary-color-1 to-primary-color-2 flex items-center justify-center">
@@ -493,6 +517,31 @@
     </footer>
 
     <!-- Modals -->
+    
+    <div class="modal-container" id="togeemu-modal">
+        <div class="modal-content glass-card backdrop-blur-3xl z-50">
+            <div class="bannervideo">
+                <video style="border-radius: 12px" width="100%" height="auto" autoplay muted loop preload="none">
+                    <source src="media/togeemu/videos/togeemu_banner.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="p-8">
+                <h3 class="text-2xl font-semibold mb-2">Project Togeemu</h3>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 tag-3 rounded text-xs">
+                        <img class="w-4 float-right" src="media/stores/steam.png">
+                    </span>
+                    <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Godot</span>
+                    <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Minigames</span>
+                </div>
+                <p class="text-lg mb-8">Project Togeemu is a collection of 10 minigames I designed and developed for a client using the Godot Engine.</p>
+                <p class="text-lg mb-8">They are inspired by the absurdist style of Wario Ware and Rhythm Heaven, and will be compiled in a future Steam release.</p>
+                
+            </div>
+        </div>
+    </div>
 
     <div class="modal-container" id="bodycombat-modal">
         <div class="modal-content glass-card backdrop-blur-3xl z-50">
