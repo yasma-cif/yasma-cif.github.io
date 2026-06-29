@@ -1,9 +1,11 @@
 :root {
-    --primary-color-1: oklch(55.715% 0.26183 304.98);
+    --primary-color-1: oklch(55.715% 0.46183 304.98);
     --primary-color-2: oklch(72.728% 0.22598 341.451);
     --primary-color-3: oklch(93.288% 0.11083 99.901);
     --primary-color-4: oklch(93.705% 0.00011 271.152);
     --primary-color-5: oklch(28.443% 0.01979 264.21);
+    
+    --primary-color-1-lighter: oklch(55.715% 0.86183 304.98);
 
     --background-color: oklch(from var(--primary-color-5) l c h);
 

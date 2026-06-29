@@ -29,6 +29,8 @@
                         'primary-color-2': 'var(--primary-color-2)',
                         'primary-color-3': 'var(--primary-color-3)',
                         'primary-color-4': 'var(--primary-color-4)',
+                        'primary-color-5': 'var(--primary-color-5)',
+                        'primary-color-1-lighter': 'var(--primary-color-1-lighter)',
 
                         'background-color': 'var(--background-color)',
                         'accents-color': 'var(--accents-color)',
@@ -101,7 +103,7 @@
                     <a href="#portfolio" class="px-8 py-3 bg-gradient-to-r from-primary-color-1 to-primary-color-2 rounded-full text-background-color font-semibold hover:shadow-lg hover:shadow-primary-color-1/50 transition transform hover:scale-105">
                         View My Work
                     </a>
-                    <a href="https://drive.google.com/file/d/1ZOVFftlGupcdbEu6NhdGCt4v_-_r1eUG/view" class="px-8 py-3 border-2 border-primary-color-1 hover:bg-primary-color-1 rounded-full hover:text-background-color transition transform hover:scale-105">
+                    <a href="https://drive.google.com/file/d/1ZOVFftlGupcdbEu6NhdGCt4v_-_r1eUG/view" target="_blank" rel="noopener noreferrer" class="px-8 py-3 border-2 border-primary-color-1 hover:bg-primary-color-1 rounded-full hover:text-background-color transition transform hover:scale-105">
                         Download CV
                     </a>
                 </div>
@@ -137,7 +139,7 @@
                     </p>
                     <div class="grid grid-cols-2 gap-4 pt-4">
                         <div class="glass-card p-4 rounded-lg">
-                            <div class="text-3xl font-bold text-primary-color-1">5+</div>
+                            <div class="text-3xl font-bold text-primary-color-1-lighter">5+</div>
                             <div class="text-base text-gray-400">Years professional experience</div>
                         </div>
                         <div class="glass-card p-4 rounded-lg">
@@ -241,12 +243,14 @@
                         <h3 class="text-xl font-semibold mb-2">Les Mills Bodycombat</h3>
                         <p class="text-gray-400 mb-4">An intense VR fitness game with challenging stages. The coaches will make you sweat!</p>
                         <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 tag-3 rounded text-xs">
+                                <img class="w-4 py-1 float-right" src="media/stores/metaquest_white.png">
+                            </span>
                             <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">VR</span>
-                            <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Meta Quest</span>
-                            <span class="px-2 py-1 tag-3 text-primary-color-4 rounded text-xs">Live Service</span>
+                            <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Live Service</span>
                         </div>
                         <div class="flex items-center">
-                            <a href="#" class="text-gray-500">
+                            <a href="#" class="text-gray-400">
                                 <i class="fa-regular fa-hand-pointer"></i> Click to learn more!
                             </a>
                         </div>
@@ -262,12 +266,17 @@
                         <h3 class="text-xl font-semibold mb-2">Dani & Evan: Dinosaur Books</h3>
                         <p class="text-gray-400 mb-4">A dinotastic interactive book, with exploration, minigames and collectables.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Visual Novel</span>
-                            <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Android/iOS</span>
-                            <span class="px-2 py-1 tag-3 text-primary-color-4 rounded text-xs">Nintendo Switch</span>
+                            <span class="px-2 tag-3 rounded text-xs flex">
+                                <img class="w-4 py-1" src="media/stores/mobile.png">
+                            </span>
+                            <span class="px-2 tag-3 rounded text-xs">
+                                <img class="w-4 py-1" src="media/stores/eshop.png">
+                            </span>
+                            <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Interactive book</span>
+                            <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Minigames</span>
                         </div>
                         <div class="flex items-center">
-                            <a href="#" class="text-gray-500">
+                            <a href="#" class="text-gray-400">
                                 <i class="fa-regular fa-hand-pointer"></i> Click to learn more!
                             </a>
                         </div>
@@ -283,12 +292,14 @@
                         <h3 class="text-xl font-semibold mb-2">Broken Echoes</h3>
                         <p class="text-gray-400 mb-4">An action/adventure game with thrilling combat, cinematic cutscenes and cool music.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 tag-3 rounded text-xs">
+                                <img class="w-4 float-right" src="media/stores/steam.png">
+                            </span>
                             <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Action/Adventure</span>
-                            <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">PC</span>
-                            <span class="px-2 py-1 tag-3 text-primary-color-4 rounded text-xs">Indie</span>
+                            <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Indie</span>
                         </div>
                         <div class="flex items-center">
-                            <a href="#" class="text-gray-500">
+                            <a href="#" class="text-gray-400">
                                 <i class="fa-regular fa-hand-pointer"></i> Click to learn more!
                             </a>
                         </div>
@@ -304,11 +315,13 @@
                         <h3 class="text-xl font-semibold mb-2">The Vanishing Hitchhiker</h3>
                         <p class="text-gray-400 mb-4">A spooky visual novel with choices and multiple endings, for the Nintendo Switch.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 tag-3 rounded text-xs">
+                                <img class="w-4 py-1 float-right" src="media/stores/eshop.png">
+                            </span>
                             <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Visual Novel</span>
-                            <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Nintendo Switch</span>
                         </div>
                         <div class="flex items-center">
-                            <a href="#" class="text-gray-500">
+                            <a href="#" class="text-gray-400">
                                 <i class="fa-regular fa-hand-pointer"></i> Click to learn more!
                             </a>
                         </div>
@@ -324,12 +337,14 @@
                         <h3 class="text-xl font-semibold mb-2">Pinzo's Smoothie Stand</h3>
                         <p class="text-gray-400 mb-4">A narrative puzzle game with 2.5D graphics, smoothies and talking sea creatures.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 tag-3 rounded text-xs">
+                                <img class="w-4 float-right" src="media/stores/steam.png">
+                            </span>
                             <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Puzzle</span>
-                            <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">PC</span>
-                            <span class="px-2 py-1 tag-3 text-primary-color-4 rounded text-xs">Prototype</span>
+                            <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Prototype</span>
                         </div>
                         <div class="flex items-center">
-                            <a href="#" class="text-gray-500">
+                            <a href="#" class="text-gray-400">
                                 <i class="fa-regular fa-hand-pointer"></i> Click to learn more!
                             </a>
                         </div>
@@ -340,7 +355,7 @@
             <!-- Shorter projects -->
             <div class="flex flex-wrap justify-center gap-6">
                 <!-- Remember -->
-                <div onclick="window.location.href='https://yasma.itch.io/remember';" class="max-w-sm glass-card rounded-lg overflow-hidden card-hover group cursor-pointer">
+                <div onclick="window.open('https://yasma.itch.io/remember', '_blank', 'noopener,noreferrer');" class="max-w-sm glass-card rounded-lg overflow-hidden card-hover group cursor-pointer">
                     <div class="bg-gradient-to-br from-primary-color-1 to-primary-color-2 flex items-center justify-center">
                         <img src="media/itchio/remember.png" style="height: auto; width:260px">
                     </div>
@@ -350,7 +365,7 @@
                             <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Game jam</span>
                         </div>
                         <div class="flex items-center">
-                            <a href="#" class="text-gray-500">
+                            <a href="#" class="text-gray-400">
                                 <i class="fa-brands fa-itch-io"></i> See on itch.io!
                             </a>
                         </div>
@@ -359,17 +374,17 @@
                 
 
                 <!-- Tower of Sins -->
-                <div onclick="window.location.href='https://yasma.itch.io/tower-of-sins';" class="max-w-sm glass-card rounded-lg overflow-hidden card-hover group cursor-pointer">
+                <div onclick="window.open('https://yasma.itch.io/tower-of-sins', '_blank', 'noopener,noreferrer');" class="max-w-sm glass-card rounded-lg overflow-hidden card-hover group cursor-pointer">
                     <div class="bg-gradient-to-br from-primary-color-1 to-primary-color-2 flex items-center justify-center">
                         <img src="media/itchio/tower_sins.png" style="height: auto; width:260px">
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2">Tower of Sins</h3>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Game jam</span>
+                            <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Bitsy</span>
                         </div>
                         <div class="flex items-center">
-                            <a href="#" class="text-gray-500">
+                            <a href="#" class="text-gray-400">
                                 <i class="fa-brands fa-itch-io"></i> See on itch.io!
                             </a>
                         </div>
@@ -377,7 +392,7 @@
                 </div>
 
                 <!-- ratita -->
-                <div onclick="window.location.href='https://yasma.itch.io/ratitajumper-final-final-ahorasiquesi';" class="max-w-sm glass-card rounded-lg overflow-hidden card-hover group cursor-pointer">
+                <div onclick="window.open('https://yasma.itch.io/ratitajumper-final-final-ahorasiquesi', '_blank', 'noopener,noreferrer');" class="max-w-sm glass-card rounded-lg overflow-hidden card-hover group cursor-pointer">
                     <div class="bg-gradient-to-br from-primary-color-1 to-primary-color-2 flex items-center justify-center">
                         <img src="media/itchio/ratita.png" style="height: auto; width:260px">
                     </div>
@@ -387,7 +402,7 @@
                             <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Game jam</span>
                         </div>
                         <div class="flex items-center">
-                            <a href="#" class="text-gray-500">
+                            <a href="#" class="text-gray-400">
                                 <i class="fa-brands fa-itch-io"></i> See on itch.io!
                             </a>
                         </div>
@@ -395,7 +410,7 @@
                 </div>
 
                 <!-- Innerself -->
-                <div onclick="window.location.href='https://yasma.itch.io/innerselves';" class="max-w-sm glass-card rounded-lg overflow-hidden card-hover group cursor-pointer">
+                <div onclick="window.open('https://yasma.itch.io/innerselves', '_blank', 'noopener,noreferrer');" class="max-w-sm glass-card rounded-lg overflow-hidden card-hover group cursor-pointer">
                     <div class="bg-gradient-to-br from-primary-color-1 to-primary-color-2 flex items-center justify-center">
                         <img src="media/itchio/innerself.png" style="height: auto; width:260px">
                     </div>
@@ -405,7 +420,7 @@
                             <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Game jam</span>
                         </div>
                         <div class="flex items-center">
-                            <a href="#" class="text-gray-500">
+                            <a href="#" class="text-gray-400">
                                 <i class="fa-brands fa-itch-io"></i> See on itch.io!
                             </a>
                         </div>
@@ -413,17 +428,17 @@
                 </div>
 
                 <!-- Mecabeat -->
-                <div onclick="window.location.href='https://yasma.itch.io/mecabeat';" class="max-w-sm glass-card rounded-lg overflow-hidden card-hover group cursor-pointer">
+                <div onclick="window.open('https://yasma.itch.io/mecabeat', '_blank', 'noopener,noreferrer');" class="max-w-sm glass-card rounded-lg overflow-hidden card-hover group cursor-pointer">
                     <div class="bg-gradient-to-br from-primary-color-1 to-primary-color-2 flex items-center justify-center">
                         <img src="media/itchio/mecabeat.png" style="height: auto; width:260px">
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2">Mecabeat</h3>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Game jam</span>
+                            <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Rhythm game</span>
                         </div>
                         <div class="flex items-center">
-                            <a href="#" class="text-gray-500">
+                            <a href="#" class="text-gray-400">
                                 <i class="fa-brands fa-itch-io"></i> See on itch.io!
                             </a>
                         </div>
@@ -491,9 +506,11 @@
             <div class="p-8">
                 <h3 class="text-2xl font-semibold mb-2">Les Mills Bodycombat</h3>
                 <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 tag-3 rounded text-xs">
+                        <img class="w-4 py-1 float-right" src="media/stores/metaquest_white.png">
+                    </span>
                     <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">VR</span>
-                    <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Meta Quest</span>
-                    <span class="px-2 py-1 tag-3 text-primary-color-4 rounded text-xs">Live Service</span>
+                    <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Live Service</span>
                 </div>
                 <p class="text-lg mb-8">Les Mills Bodycombat is a Virtual Reality live service fitness game based on the widely acclaimed Bodycombat training program, released for Meta Quest and PlayStation VR using Unity.</p>
                 <div class="text-lg mb-4">
@@ -525,9 +542,14 @@
             <div class="p-8">
                 <h3 class="text-2xl font-semibold mb-2">Dani & Evan: Dinosaur Books</h3>
                 <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Visual Novel</span>
-                    <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Android/iOS</span>
-                    <span class="px-2 py-1 tag-3 text-primary-color-4 rounded text-xs">Nintendo Switch</span>
+                    <span class="px-2 tag-3 rounded text-xs flex">
+                        <img class="w-4 py-1" src="media/stores/mobile.png">
+                    </span>
+                    <span class="px-2 tag-3 rounded text-xs">
+                        <img class="w-4 py-1" src="media/stores/eshop.png">
+                    </span>
+                    <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Interactive book</span>
+                    <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Minigames</span>
                 </div>
                 <p class="text-lg mb-8">Dani & Evan: Dinosaur Books is an interactive visual novel based on the book series "The Adventures of Dani and Evan", developed using Unity.</p>
                 <div class="text-lg mb-4">
@@ -562,9 +584,11 @@
             <div class="p-8">
                 <h3 class="text-2xl font-semibold mb-2">Broken Echoes</h3>
                 <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 tag-3 rounded text-xs">
+                        <img class="w-4 float-right" src="media/stores/steam.png">
+                    </span>
                     <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Action/Adventure</span>
-                    <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">PC</span>
-                    <span class="px-2 py-1 tag-3 text-primary-color-4 rounded text-xs">Indie</span>
+                    <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Indie</span>
                 </div>
                 <p class="text-lg mb-8">Broken Echoes is an independent project developed alongside 6 colleagues using Unity.
                     It's an action/adventure game with different combat classes, exploration and motion captured cutscenes.</p>
@@ -602,8 +626,10 @@
             <div class="p-8">
                 <h3 class="text-2xl font-semibold mb-2">The Vanishing Hitchhiker</h3>
                 <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 tag-3 rounded text-xs">
+                        <img class="w-4 py-1 float-right" src="media/stores/eshop.png">
+                    </span>
                     <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Visual Novel</span>
-                    <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Nintendo Switch</span>
                 </div>
                 <p class="text-lg mb-8">The Vanishing Hitchhiker is a short visual novel for the Nintendo Switch with multiple story paths, different endings and spooky girls.</p>
                 <div class="text-lg mb-4">
@@ -635,9 +661,11 @@
             <div class="p-8">
                 <h3 class="text-2xl font-semibold mb-2">Pinzo's Smoothie Stand</h3>
                 <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 tag-3 rounded text-xs">
+                        <img class="w-4 float-right" src="media/stores/steam.png">
+                    </span>
                     <span class="px-2 py-1 tag-1 text-primary-color-2 rounded text-xs">Puzzle</span>
-                    <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">PC</span>
-                    <span class="px-2 py-1 tag-3 text-primary-color-4 rounded text-xs">Prototype</span>
+                    <span class="px-2 py-1 tag-2 text-primary-color-3 rounded text-xs">Prototype</span>
                 </div>
                 <p class="text-lg mb-8">Pinzo's Smoothie Stand is my own personal project, developed as a way to learn about 2.5D environments, editor tooling and puzzle generation.
                     I worked on it as a solo developer, with some help for character sprites and models.</p>
